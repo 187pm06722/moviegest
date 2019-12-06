@@ -1,6 +1,6 @@
 ﻿namespace index
 {
-    partial class Form1
+    partial class indexForm
     {
         /// <summary>
         /// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace index
 {
-    public partial class Form1 : Form
+    public partial class indexForm : Form
     {
-        public Form1()
+        public indexForm()
         {
             InitializeComponent();
         }

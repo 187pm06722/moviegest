@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="6cd8d72480ed468786ecbd60b44ba255" Name="Diagram1" ZoomLevel="79">
-        <EntityTypeShape EntityType="moviegestDBModel.movie_dataset_fixed" Width="2.75" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="moviegestDBModel.movie_dataset_fixed" Width="4.625" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

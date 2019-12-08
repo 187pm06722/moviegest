@@ -8,6 +8,7 @@ namespace index
 {
     class moviesManagement
     {
+
         public movie_dataset_fixed[] GetMovies()
         {
             var db = new moviegestDBEntities1();

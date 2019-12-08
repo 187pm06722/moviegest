@@ -13,10 +13,10 @@ namespace index
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class moviegestDBEntities : DbContext
+    public partial class moviegestDBEntities01 : DbContext
     {
-        public moviegestDBEntities()
-            : base("name=moviegestDBEntities")
+        public moviegestDBEntities01()
+            : base("name=moviegestDBEntities01")
         {
         }
     

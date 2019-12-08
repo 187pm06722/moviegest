@@ -6,7 +6,7 @@
     <edmx:StorageModels>
       <Schema Namespace="moviegestDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Errors Found During Generation:
-warning 6013: The table/view 'C:\USERS\AUGUS\SOURCE\REPOS\MOVIEGEST01\INDEX\INDEX\MOVIEGESTDB.MDF.dbo.movie_dataset_fixed' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+warning 6013: The table/view 'C:\USERS\AUGUS\ONEDRIVE\DOCUMENTS\MOVIEGESTDB.MDF.dbo.movie_dataset_fixed' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
         <EntityType Name="movie_dataset_fixed">
           <Property Name="index" Type="int" />
           <Property Name="budget" Type="bigint" />
@@ -33,13 +33,13 @@ warning 6013: The table/view 'C:\USERS\AUGUS\SOURCE\REPOS\MOVIEGEST01\INDEX\INDE
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="moviegestDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="moviegestDBEntities" annotation:LazyLoadingEnabled="true" />
+        <EntityContainer Name="moviegestDBEntities01" annotation:LazyLoadingEnabled="true" />
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="moviegestDBModelStoreContainer" CdmEntityContainer="moviegestDBEntities" />
+        <EntityContainerMapping StorageEntityContainer="moviegestDBModelStoreContainer" CdmEntityContainer="moviegestDBEntities01" />
       </Mapping>
     </edmx:Mappings>
   </edmx:Runtime>

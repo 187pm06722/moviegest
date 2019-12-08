@@ -8,11 +8,24 @@ namespace index
 {
     class moviesManagement
     {
-        public Movie[] GetMovies()
+        
+
+        public void AddMovies()
         {
-            var db = new moviegestDBEntities01();
-            var movies = db.Set<Movie>().ToArray();
-            return movies;
+            //
         }
+
+        public void EditMovie()
+        {
+            //
+        }
+
+        public void DeleteMovie()
+        {
+
+        }
+
+        
+
     }
 }

@@ -15,11 +15,17 @@ namespace index
         public indexForm()
         {
             InitializeComponent();
+            this.Load += indexForm_Load;
+        }
+
+        void indexForm_Load(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("moviegest");
         }
     }
 }

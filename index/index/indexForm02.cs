@@ -31,7 +31,7 @@ namespace index
             }
             catch(Exception ex)
             {
-                throw new ApplicationException("System error! Please check it again");
+                throw new ApplicationException("System error! Please check it again", ex);
             }
         }
     }

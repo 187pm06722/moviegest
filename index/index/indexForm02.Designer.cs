@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(indexForm02));
             this.panel1 = new System.Windows.Forms.Panel();
             this.llExit = new System.Windows.Forms.LinkLabel();
-            this.llRecommendation = new System.Windows.Forms.LinkLabel();
+            this.llBrowse = new System.Windows.Forms.LinkLabel();
             this.llYourFavorite = new System.Windows.Forms.LinkLabel();
             this.logoBox01 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -44,7 +44,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.panel1.Controls.Add(this.llExit);
-            this.panel1.Controls.Add(this.llRecommendation);
+            this.panel1.Controls.Add(this.llBrowse);
             this.panel1.Controls.Add(this.llYourFavorite);
             this.panel1.Controls.Add(this.logoBox01);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -70,21 +70,21 @@
             this.llExit.Text = "Exit";
             this.llExit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // llRecommendation
+            // llBrowse
             // 
-            this.llRecommendation.ActiveLinkColor = System.Drawing.Color.Red;
-            this.llRecommendation.AllowDrop = true;
-            this.llRecommendation.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llRecommendation.Image = ((System.Drawing.Image)(resources.GetObject("llRecommendation.Image")));
-            this.llRecommendation.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llRecommendation.LinkColor = System.Drawing.Color.White;
-            this.llRecommendation.Location = new System.Drawing.Point(1, 124);
-            this.llRecommendation.Name = "llRecommendation";
-            this.llRecommendation.Size = new System.Drawing.Size(197, 112);
-            this.llRecommendation.TabIndex = 3;
-            this.llRecommendation.TabStop = true;
-            this.llRecommendation.Text = "Browse For Movies";
-            this.llRecommendation.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.llBrowse.ActiveLinkColor = System.Drawing.Color.Red;
+            this.llBrowse.AllowDrop = true;
+            this.llBrowse.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llBrowse.Image = ((System.Drawing.Image)(resources.GetObject("llBrowse.Image")));
+            this.llBrowse.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.llBrowse.LinkColor = System.Drawing.Color.White;
+            this.llBrowse.Location = new System.Drawing.Point(1, 124);
+            this.llBrowse.Name = "llBrowse";
+            this.llBrowse.Size = new System.Drawing.Size(197, 112);
+            this.llBrowse.TabIndex = 3;
+            this.llBrowse.TabStop = true;
+            this.llBrowse.Text = "Browse For Movies";
+            this.llBrowse.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // llYourFavorite
             // 
@@ -153,7 +153,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox logoBox01;
         private System.Windows.Forms.LinkLabel llYourFavorite;
-        private System.Windows.Forms.LinkLabel llRecommendation;
+        private System.Windows.Forms.LinkLabel llBrowse;
         private System.Windows.Forms.LinkLabel llExit;
     }
 }

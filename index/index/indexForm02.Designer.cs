@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(indexForm02));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.llExit = new System.Windows.Forms.LinkLabel();
             this.llRecommendation = new System.Windows.Forms.LinkLabel();
             this.llYourFavorite = new System.Windows.Forms.LinkLabel();
             this.logoBox01 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.llExit = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox01)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +54,22 @@
             this.panel1.Size = new System.Drawing.Size(197, 749);
             this.panel1.TabIndex = 0;
             // 
+            // llExit
+            // 
+            this.llExit.ActiveLinkColor = System.Drawing.Color.Red;
+            this.llExit.AllowDrop = true;
+            this.llExit.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llExit.Image = ((System.Drawing.Image)(resources.GetObject("llExit.Image")));
+            this.llExit.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.llExit.LinkColor = System.Drawing.Color.White;
+            this.llExit.Location = new System.Drawing.Point(-1, 346);
+            this.llExit.Name = "llExit";
+            this.llExit.Size = new System.Drawing.Size(197, 84);
+            this.llExit.TabIndex = 4;
+            this.llExit.TabStop = true;
+            this.llExit.Text = "Exit";
+            this.llExit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
             // llRecommendation
             // 
             this.llRecommendation.ActiveLinkColor = System.Drawing.Color.Red;
@@ -62,7 +78,7 @@
             this.llRecommendation.Image = ((System.Drawing.Image)(resources.GetObject("llRecommendation.Image")));
             this.llRecommendation.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.llRecommendation.LinkColor = System.Drawing.Color.White;
-            this.llRecommendation.Location = new System.Drawing.Point(-2, 216);
+            this.llRecommendation.Location = new System.Drawing.Point(-1, 216);
             this.llRecommendation.Name = "llRecommendation";
             this.llRecommendation.Size = new System.Drawing.Size(197, 112);
             this.llRecommendation.TabIndex = 3;
@@ -78,7 +94,7 @@
             this.llYourFavorite.Image = ((System.Drawing.Image)(resources.GetObject("llYourFavorite.Image")));
             this.llYourFavorite.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.llYourFavorite.LinkColor = System.Drawing.Color.White;
-            this.llYourFavorite.Location = new System.Drawing.Point(0, 94);
+            this.llYourFavorite.Location = new System.Drawing.Point(-2, 94);
             this.llYourFavorite.Name = "llYourFavorite";
             this.llYourFavorite.Size = new System.Drawing.Size(197, 101);
             this.llYourFavorite.TabIndex = 2;
@@ -90,9 +106,9 @@
             // 
             this.logoBox01.BackColor = System.Drawing.Color.Transparent;
             this.logoBox01.Image = ((System.Drawing.Image)(resources.GetObject("logoBox01.Image")));
-            this.logoBox01.Location = new System.Drawing.Point(0, 0);
+            this.logoBox01.Location = new System.Drawing.Point(16, 0);
             this.logoBox01.Name = "logoBox01";
-            this.logoBox01.Size = new System.Drawing.Size(195, 121);
+            this.logoBox01.Size = new System.Drawing.Size(175, 121);
             this.logoBox01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoBox01.TabIndex = 1;
             this.logoBox01.TabStop = false;
@@ -102,33 +118,17 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(197, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 749);
+            this.panel2.Size = new System.Drawing.Size(2, 749);
             this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(207, 0);
+            this.panel3.Location = new System.Drawing.Point(199, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1163, 749);
+            this.panel3.Size = new System.Drawing.Size(1171, 749);
             this.panel3.TabIndex = 2;
-            // 
-            // llExit
-            // 
-            this.llExit.ActiveLinkColor = System.Drawing.Color.Red;
-            this.llExit.AllowDrop = true;
-            this.llExit.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llExit.Image = ((System.Drawing.Image)(resources.GetObject("llExit.Image")));
-            this.llExit.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llExit.LinkColor = System.Drawing.Color.White;
-            this.llExit.Location = new System.Drawing.Point(0, 347);
-            this.llExit.Name = "llExit";
-            this.llExit.Size = new System.Drawing.Size(197, 84);
-            this.llExit.TabIndex = 4;
-            this.llExit.TabStop = true;
-            this.llExit.Text = "Exit";
-            this.llExit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // indexForm02
             // 

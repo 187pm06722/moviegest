@@ -78,12 +78,12 @@
             this.llRecommendation.Image = ((System.Drawing.Image)(resources.GetObject("llRecommendation.Image")));
             this.llRecommendation.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.llRecommendation.LinkColor = System.Drawing.Color.White;
-            this.llRecommendation.Location = new System.Drawing.Point(-1, 216);
+            this.llRecommendation.Location = new System.Drawing.Point(1, 124);
             this.llRecommendation.Name = "llRecommendation";
             this.llRecommendation.Size = new System.Drawing.Size(197, 112);
             this.llRecommendation.TabIndex = 3;
             this.llRecommendation.TabStop = true;
-            this.llRecommendation.Text = "Recommendation";
+            this.llRecommendation.Text = "Browse For Movies";
             this.llRecommendation.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // llYourFavorite
@@ -94,12 +94,12 @@
             this.llYourFavorite.Image = ((System.Drawing.Image)(resources.GetObject("llYourFavorite.Image")));
             this.llYourFavorite.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.llYourFavorite.LinkColor = System.Drawing.Color.White;
-            this.llYourFavorite.Location = new System.Drawing.Point(-2, 94);
+            this.llYourFavorite.Location = new System.Drawing.Point(3, 244);
             this.llYourFavorite.Name = "llYourFavorite";
             this.llYourFavorite.Size = new System.Drawing.Size(197, 101);
             this.llYourFavorite.TabIndex = 2;
             this.llYourFavorite.TabStop = true;
-            this.llYourFavorite.Text = "Your favorite";
+            this.llYourFavorite.Text = "Your Favorites";
             this.llYourFavorite.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // logoBox01

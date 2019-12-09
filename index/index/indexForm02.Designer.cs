@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(indexForm02));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.llRecommendation = new System.Windows.Forms.LinkLabel();
+            this.llYourFavorite = new System.Windows.Forms.LinkLabel();
+            this.logoBox01 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.logoBox01 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.llExit = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox01)).BeginInit();
             this.SuspendLayout();
@@ -43,9 +43,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.llExit);
+            this.panel1.Controls.Add(this.llRecommendation);
+            this.panel1.Controls.Add(this.llYourFavorite);
             this.panel1.Controls.Add(this.logoBox01);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -54,23 +54,37 @@
             this.panel1.Size = new System.Drawing.Size(197, 749);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // llRecommendation
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(197, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 749);
-            this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.llRecommendation.ActiveLinkColor = System.Drawing.Color.Red;
+            this.llRecommendation.AllowDrop = true;
+            this.llRecommendation.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llRecommendation.Image = ((System.Drawing.Image)(resources.GetObject("llRecommendation.Image")));
+            this.llRecommendation.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.llRecommendation.LinkColor = System.Drawing.Color.White;
+            this.llRecommendation.Location = new System.Drawing.Point(-2, 216);
+            this.llRecommendation.Name = "llRecommendation";
+            this.llRecommendation.Size = new System.Drawing.Size(197, 112);
+            this.llRecommendation.TabIndex = 3;
+            this.llRecommendation.TabStop = true;
+            this.llRecommendation.Text = "Recommendation";
+            this.llRecommendation.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // panel3
+            // llYourFavorite
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(207, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1163, 749);
-            this.panel3.TabIndex = 2;
+            this.llYourFavorite.ActiveLinkColor = System.Drawing.Color.Red;
+            this.llYourFavorite.AllowDrop = true;
+            this.llYourFavorite.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llYourFavorite.Image = ((System.Drawing.Image)(resources.GetObject("llYourFavorite.Image")));
+            this.llYourFavorite.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.llYourFavorite.LinkColor = System.Drawing.Color.White;
+            this.llYourFavorite.Location = new System.Drawing.Point(0, 94);
+            this.llYourFavorite.Name = "llYourFavorite";
+            this.llYourFavorite.Size = new System.Drawing.Size(197, 101);
+            this.llYourFavorite.TabIndex = 2;
+            this.llYourFavorite.TabStop = true;
+            this.llYourFavorite.Text = "Your favorite";
+            this.llYourFavorite.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // logoBox01
             // 
@@ -83,41 +97,38 @@
             this.logoBox01.TabIndex = 1;
             this.logoBox01.TabStop = false;
             // 
-            // label3
+            // panel2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(82, 345);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 19);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Exit";
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(197, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(10, 749);
+            this.panel2.TabIndex = 1;
             // 
-            // label2
+            // panel3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(35, 275);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 19);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Recommendation";
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(207, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1163, 749);
+            this.panel3.TabIndex = 2;
             // 
-            // button1
+            // llExit
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.button1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(30, 157);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 68);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Your favorite";
-            this.button1.UseVisualStyleBackColor = false;
+            this.llExit.ActiveLinkColor = System.Drawing.Color.Red;
+            this.llExit.AllowDrop = true;
+            this.llExit.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llExit.Image = ((System.Drawing.Image)(resources.GetObject("llExit.Image")));
+            this.llExit.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.llExit.LinkColor = System.Drawing.Color.White;
+            this.llExit.Location = new System.Drawing.Point(0, 347);
+            this.llExit.Name = "llExit";
+            this.llExit.Size = new System.Drawing.Size(197, 84);
+            this.llExit.TabIndex = 4;
+            this.llExit.TabStop = true;
+            this.llExit.Text = "Exit";
+            this.llExit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // indexForm02
             // 
@@ -130,7 +141,6 @@
             this.Name = "indexForm02";
             this.Text = "indexForm02";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox01)).EndInit();
             this.ResumeLayout(false);
 
@@ -142,8 +152,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox logoBox01;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel llYourFavorite;
+        private System.Windows.Forms.LinkLabel llRecommendation;
+        private System.Windows.Forms.LinkLabel llExit;
     }
 }

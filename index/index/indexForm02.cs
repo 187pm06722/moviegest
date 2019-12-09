@@ -15,16 +15,24 @@ namespace index
         public indexForm02()
         {
             InitializeComponent();
+            this.llExit.Click += LlExit_Click;
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void LlExit_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            DialogResult Exit;
+            try
+            {
+                Exit = MessageBox.Show("System warning! Do you want to exit. Confirm if you want to exit", "Exit form", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                if(Exit == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
+            catch(Exception ex)
+            {
+                throw new ApplicationException("System error! Please check it again");
+            }
         }
     }
 }

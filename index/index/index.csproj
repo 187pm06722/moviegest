@@ -74,6 +74,12 @@
     <Compile Include="indexForm.Designer.cs">
       <DependentUpon>indexForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="indexForm02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="indexForm02.Designer.cs">
+      <DependentUpon>indexForm02.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -98,6 +104,9 @@
     <Compile Include="ViewMovie.cs" />
     <EmbeddedResource Include="indexForm.resx">
       <DependentUpon>indexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="indexForm02.resx">
+      <DependentUpon>indexForm02.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

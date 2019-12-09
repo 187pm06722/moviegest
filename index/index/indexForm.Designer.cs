@@ -29,51 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(indexForm));
-            this.logoBox01 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.grdMovies = new System.Windows.Forms.DataGridView();
             this.lblMoviedb = new System.Windows.Forms.Label();
+            this.logoBox01 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.grdMovies)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox01)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grdMovies)).BeginInit();
             this.SuspendLayout();
-            // 
-            // logoBox01
-            // 
-            this.logoBox01.Image = ((System.Drawing.Image)(resources.GetObject("logoBox01.Image")));
-            this.logoBox01.Location = new System.Drawing.Point(27, -9);
-            this.logoBox01.Name = "logoBox01";
-            this.logoBox01.Size = new System.Drawing.Size(134, 93);
-            this.logoBox01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logoBox01.TabIndex = 0;
-            this.logoBox01.TabStop = false;
-            this.logoBox01.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DimGray;
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.logoBox01);
-            this.panel1.Location = new System.Drawing.Point(-14, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(179, 1059);
-            this.panel1.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(630, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 20);
-            this.textBox1.TabIndex = 1;
             // 
             // txtSearch
             // 
@@ -115,18 +84,40 @@
             this.lblMoviedb.TabIndex = 5;
             this.lblMoviedb.Text = "Your movie database ";
             // 
+            // logoBox01
+            // 
+            this.logoBox01.BackColor = System.Drawing.Color.Transparent;
+            this.logoBox01.Image = ((System.Drawing.Image)(resources.GetObject("logoBox01.Image")));
+            this.logoBox01.Location = new System.Drawing.Point(17, 3);
+            this.logoBox01.Name = "logoBox01";
+            this.logoBox01.Size = new System.Drawing.Size(160, 94);
+            this.logoBox01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logoBox01.TabIndex = 0;
+            this.logoBox01.TabStop = false;
+            this.logoBox01.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(630, 32);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(239, 20);
+            this.textBox1.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(26, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(87, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "Your favorite";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(26, 161);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 13);
@@ -136,18 +127,32 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(26, 203);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(24, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Exit";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.logoBox01);
+            this.panel1.Location = new System.Drawing.Point(-14, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(179, 1059);
+            this.panel1.TabIndex = 1;
+            // 
             // indexForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(1584, 761);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.lblMoviedb);
             this.Controls.Add(this.grdMovies);
             this.Controls.Add(this.btnSearch);
@@ -155,27 +160,26 @@
             this.Controls.Add(this.panel1);
             this.Name = "indexForm";
             this.Text = "moviegestForm";
+            ((System.ComponentModel.ISupportInitialize)(this.grdMovies)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox01)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grdMovies)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox logoBox01;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView grdMovies;
         private System.Windows.Forms.Label lblMoviedb;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox logoBox01;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

@@ -15,10 +15,17 @@ namespace index
         public indexForm02()
         {
             InitializeComponent();
-            this.llExit.Click += LlExit_Click;
+            this.btnExit.Click += LlExit_Click;
+            this.btnBrowseForMovies.Click += LlBrowseForMovies_Click;
         }
 
-        private void LlExit_Click(object sender, EventArgs e)
+        void LlBrowseForMovies_Click(object sender, EventArgs e)
+        {
+            var btnBrowseForMovies = new browseForm();
+            btnBrowseForMovies.ShowDialog();
+        }
+
+        void LlExit_Click(object sender, EventArgs e)
         {
             DialogResult Exit;
             try

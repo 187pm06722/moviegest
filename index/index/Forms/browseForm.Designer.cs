@@ -33,6 +33,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnAddNewMovie = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,14 +67,14 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 89);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(821, 338);
+            this.dataGridView1.Size = new System.Drawing.Size(821, 352);
             this.dataGridView1.TabIndex = 2;
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(290, 466);
+            this.btnSave.Location = new System.Drawing.Point(313, 466);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(98, 33);
             this.btnSave.TabIndex = 3;
@@ -83,12 +85,34 @@
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Red;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(428, 466);
+            this.btnCancel.Location = new System.Drawing.Point(469, 466);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(98, 33);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnAddNewMovie
+            // 
+            this.btnAddNewMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnAddNewMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewMovie.Location = new System.Drawing.Point(73, 466);
+            this.btnAddNewMovie.Name = "btnAddNewMovie";
+            this.btnAddNewMovie.Size = new System.Drawing.Size(179, 33);
+            this.btnAddNewMovie.TabIndex = 5;
+            this.btnAddNewMovie.Text = "Add new movie";
+            this.btnAddNewMovie.UseVisualStyleBackColor = false;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(636, 466);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(98, 33);
+            this.btnDelete.TabIndex = 6;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // browseForm
             // 
@@ -96,6 +120,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(822, 528);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnAddNewMovie);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dataGridView1);
@@ -116,5 +142,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnAddNewMovie;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

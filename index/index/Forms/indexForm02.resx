@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="llExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAP5JREFUWEft
         lUEOgjAQRdEjeCi3upBN4QZ6CDRx40I9ljfSRI3+6q/BhJROpwks+pIfmCHz+ZBCi8woqarqlUK0k9Nl
@@ -128,7 +128,7 @@
         ol1mzBTFGwEFil8qZegaAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="llBrowse.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnBrowseForMovies.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAABGdBTUEAALGPC/xhBQAACRpJREFUeF7t
         nHmsHlMYxlt7qX3fiaVBovYt6CWUCn/Q3vZ2u7kaufYl/iBCuSGkgtQSYgkRYglCYouiqpTS1lpVW2y5
@@ -173,7 +173,7 @@
         QmCC
 </value>
   </data>
-  <data name="llYourFavorite.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnYourFavorites.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAACoRJREFUaEPVmXmQl3Udx58FV3aXY5crpLWSGEzHQUFY4r7kvu/7WGRBbhCHAQaI

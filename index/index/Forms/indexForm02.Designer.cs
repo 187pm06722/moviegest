@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(indexForm02));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.llExit = new System.Windows.Forms.LinkLabel();
-            this.llBrowse = new System.Windows.Forms.LinkLabel();
-            this.llYourFavorite = new System.Windows.Forms.LinkLabel();
+            this.btnExit = new System.Windows.Forms.LinkLabel();
+            this.btnBrowseForMovies = new System.Windows.Forms.LinkLabel();
+            this.btnYourFavorites = new System.Windows.Forms.LinkLabel();
             this.logoBox01 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -43,9 +43,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.panel1.Controls.Add(this.llExit);
-            this.panel1.Controls.Add(this.llBrowse);
-            this.panel1.Controls.Add(this.llYourFavorite);
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Controls.Add(this.btnBrowseForMovies);
+            this.panel1.Controls.Add(this.btnYourFavorites);
             this.panel1.Controls.Add(this.logoBox01);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -54,61 +54,61 @@
             this.panel1.Size = new System.Drawing.Size(197, 749);
             this.panel1.TabIndex = 0;
             // 
-            // llExit
+            // btnExit
             // 
-            this.llExit.ActiveLinkColor = System.Drawing.Color.Red;
-            this.llExit.AllowDrop = true;
-            this.llExit.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llExit.Image = ((System.Drawing.Image)(resources.GetObject("llExit.Image")));
-            this.llExit.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llExit.LinkColor = System.Drawing.Color.White;
-            this.llExit.Location = new System.Drawing.Point(-1, 346);
-            this.llExit.Name = "llExit";
-            this.llExit.Size = new System.Drawing.Size(197, 84);
-            this.llExit.TabIndex = 4;
-            this.llExit.TabStop = true;
-            this.llExit.Text = "Exit";
-            this.llExit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnExit.ActiveLinkColor = System.Drawing.Color.Red;
+            this.btnExit.AllowDrop = true;
+            this.btnExit.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnExit.LinkColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(-1, 346);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(197, 84);
+            this.btnExit.TabIndex = 4;
+            this.btnExit.TabStop = true;
+            this.btnExit.Text = "Exit";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // llBrowse
+            // btnBrowseForMovies
             // 
-            this.llBrowse.ActiveLinkColor = System.Drawing.Color.Red;
-            this.llBrowse.AllowDrop = true;
-            this.llBrowse.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llBrowse.Image = ((System.Drawing.Image)(resources.GetObject("llBrowse.Image")));
-            this.llBrowse.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llBrowse.LinkColor = System.Drawing.Color.White;
-            this.llBrowse.Location = new System.Drawing.Point(1, 124);
-            this.llBrowse.Name = "llBrowse";
-            this.llBrowse.Size = new System.Drawing.Size(197, 112);
-            this.llBrowse.TabIndex = 3;
-            this.llBrowse.TabStop = true;
-            this.llBrowse.Text = "Browse For Movies";
-            this.llBrowse.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBrowseForMovies.ActiveLinkColor = System.Drawing.Color.Red;
+            this.btnBrowseForMovies.AllowDrop = true;
+            this.btnBrowseForMovies.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowseForMovies.Image = ((System.Drawing.Image)(resources.GetObject("btnBrowseForMovies.Image")));
+            this.btnBrowseForMovies.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnBrowseForMovies.LinkColor = System.Drawing.Color.White;
+            this.btnBrowseForMovies.Location = new System.Drawing.Point(1, 124);
+            this.btnBrowseForMovies.Name = "btnBrowseForMovies";
+            this.btnBrowseForMovies.Size = new System.Drawing.Size(197, 112);
+            this.btnBrowseForMovies.TabIndex = 3;
+            this.btnBrowseForMovies.TabStop = true;
+            this.btnBrowseForMovies.Text = "Browse For Movies";
+            this.btnBrowseForMovies.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // llYourFavorite
+            // btnYourFavorites
             // 
-            this.llYourFavorite.ActiveLinkColor = System.Drawing.Color.Red;
-            this.llYourFavorite.AllowDrop = true;
-            this.llYourFavorite.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llYourFavorite.Image = ((System.Drawing.Image)(resources.GetObject("llYourFavorite.Image")));
-            this.llYourFavorite.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llYourFavorite.LinkColor = System.Drawing.Color.White;
-            this.llYourFavorite.Location = new System.Drawing.Point(3, 244);
-            this.llYourFavorite.Name = "llYourFavorite";
-            this.llYourFavorite.Size = new System.Drawing.Size(197, 101);
-            this.llYourFavorite.TabIndex = 2;
-            this.llYourFavorite.TabStop = true;
-            this.llYourFavorite.Text = "Your Favorites";
-            this.llYourFavorite.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnYourFavorites.ActiveLinkColor = System.Drawing.Color.Red;
+            this.btnYourFavorites.AllowDrop = true;
+            this.btnYourFavorites.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYourFavorites.Image = ((System.Drawing.Image)(resources.GetObject("btnYourFavorites.Image")));
+            this.btnYourFavorites.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnYourFavorites.LinkColor = System.Drawing.Color.White;
+            this.btnYourFavorites.Location = new System.Drawing.Point(3, 244);
+            this.btnYourFavorites.Name = "btnYourFavorites";
+            this.btnYourFavorites.Size = new System.Drawing.Size(197, 101);
+            this.btnYourFavorites.TabIndex = 2;
+            this.btnYourFavorites.TabStop = true;
+            this.btnYourFavorites.Text = "Your Favorites";
+            this.btnYourFavorites.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // logoBox01
             // 
             this.logoBox01.BackColor = System.Drawing.Color.Transparent;
             this.logoBox01.Image = ((System.Drawing.Image)(resources.GetObject("logoBox01.Image")));
-            this.logoBox01.Location = new System.Drawing.Point(16, 0);
+            this.logoBox01.Location = new System.Drawing.Point(0, 0);
             this.logoBox01.Name = "logoBox01";
-            this.logoBox01.Size = new System.Drawing.Size(175, 121);
+            this.logoBox01.Size = new System.Drawing.Size(199, 121);
             this.logoBox01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoBox01.TabIndex = 1;
             this.logoBox01.TabStop = false;
@@ -152,8 +152,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox logoBox01;
-        private System.Windows.Forms.LinkLabel llYourFavorite;
-        private System.Windows.Forms.LinkLabel llBrowse;
-        private System.Windows.Forms.LinkLabel llExit;
+        private System.Windows.Forms.LinkLabel btnYourFavorites;
+        private System.Windows.Forms.LinkLabel btnBrowseForMovies;
+        private System.Windows.Forms.LinkLabel btnExit;
     }
 }

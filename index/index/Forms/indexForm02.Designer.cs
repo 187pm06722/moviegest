@@ -88,6 +88,7 @@
             this.btnBrowseForMovies.TabStop = true;
             this.btnBrowseForMovies.Text = "Browse For Movies";
             this.btnBrowseForMovies.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBrowseForMovies.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnBrowseForMovies_LinkClicked);
             // 
             // btnYourFavorites
             // 

@@ -75,12 +75,6 @@
     <Compile Include="Forms\browseForm.Designer.cs">
       <DependentUpon>browseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\indexForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\indexForm.Designer.cs">
-      <DependentUpon>indexForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\indexForm02.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,9 +105,6 @@
     <Compile Include="Logic\ViewMovie.cs" />
     <EmbeddedResource Include="Forms\browseForm.resx">
       <DependentUpon>browseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\indexForm.resx">
-      <DependentUpon>indexForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\indexForm02.resx">
       <DependentUpon>indexForm02.cs</DependentUpon>

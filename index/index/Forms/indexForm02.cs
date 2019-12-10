@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace index
 {
+    
     public partial class indexForm02 : Form
     {
+        private moviesManagement Business;
         public indexForm02()
         {
             InitializeComponent();
@@ -21,8 +23,8 @@ namespace index
 
         void btnBrowseForMovies_Click(object sender, EventArgs e)
         {
-            var btnBrowseForMovies = new browseForm();
-            btnBrowseForMovies.ShowDialog();
+            //var btnBrowseForMovies = new browseForm();
+            //btnBrowseForMovies.ShowDialog();
         }
 
         void LlExit_Click(object sender, EventArgs e)
@@ -40,6 +42,11 @@ namespace index
             {
                 throw new ApplicationException("System error! Please check it again", ex);
             }
+        }
+
+        private void btnBrowseForMovies_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

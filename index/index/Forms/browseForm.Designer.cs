@@ -128,7 +128,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);
             this.Name = "browseForm";
-            this.Text = "browseForm";
+            this.Text = "Browse For Movies Form";
             ((System.ComponentModel.ISupportInitialize)(this.grdDB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

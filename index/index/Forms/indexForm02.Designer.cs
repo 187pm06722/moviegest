@@ -165,7 +165,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "indexForm02";
-            this.Text = "indexForm02";
+            this.Text = "Moviegest Index";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoBox01)).EndInit();
             this.panel3.ResumeLayout(false);

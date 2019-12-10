@@ -16,10 +16,10 @@ namespace index
         {
             InitializeComponent();
             this.btnExit.Click += LlExit_Click;
-            this.btnBrowseForMovies.Click += LlBrowseForMovies_Click;
+            this.btnBrowseForMovies.Click += btnBrowseForMovies_Click;
         }
 
-        void LlBrowseForMovies_Click(object sender, EventArgs e)
+        void btnBrowseForMovies_Click(object sender, EventArgs e)
         {
             var btnBrowseForMovies = new browseForm();
             btnBrowseForMovies.ShowDialog();

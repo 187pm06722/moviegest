@@ -165,6 +165,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "indexForm02";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Moviegest Index";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoBox01)).EndInit();

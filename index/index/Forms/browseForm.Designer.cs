@@ -33,11 +33,12 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.grdDB = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.addNewMovieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cancelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddNewMovie = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnCancel = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAddToFavorite = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.grdDB)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,39 +78,40 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addNewMovieToolStripMenuItem,
-            this.saveToolStripMenuItem,
-            this.deleteToolStripMenuItem,
-            this.cancelToolStripMenuItem});
+            this.btnAddNewMovie,
+            this.btnSave,
+            this.btnDelete,
+            this.btnCancel,
+            this.btnAddToFavorite});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(822, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // addNewMovieToolStripMenuItem
+            // btnAddNewMovie
             // 
-            this.addNewMovieToolStripMenuItem.Name = "addNewMovieToolStripMenuItem";
-            this.addNewMovieToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
-            this.addNewMovieToolStripMenuItem.Text = "Add New Movie";
+            this.btnAddNewMovie.Name = "btnAddNewMovie";
+            this.btnAddNewMovie.Size = new System.Drawing.Size(104, 20);
+            this.btnAddNewMovie.Text = "Add New Movie";
             // 
-            // saveToolStripMenuItem
+            // btnSave
             // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.saveToolStripMenuItem.Text = "Save";
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(43, 20);
+            this.btnSave.Text = "Save";
             // 
-            // deleteToolStripMenuItem
+            // btnDelete
             // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.deleteToolStripMenuItem.Text = "Delete";
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(52, 20);
+            this.btnDelete.Text = "Delete";
             // 
-            // cancelToolStripMenuItem
+            // btnCancel
             // 
-            this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
-            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.cancelToolStripMenuItem.Text = "Cancel";
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(55, 20);
+            this.btnCancel.Text = "Cancel";
             // 
             // pictureBox1
             // 
@@ -120,6 +122,12 @@
             this.pictureBox1.Size = new System.Drawing.Size(23, 28);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnAddToFavorite
+            // 
+            this.btnAddToFavorite.Name = "btnAddToFavorite";
+            this.btnAddToFavorite.Size = new System.Drawing.Size(102, 20);
+            this.btnAddToFavorite.Text = "Add To Favorite";
             // 
             // browseForm
             // 
@@ -151,10 +159,11 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView grdDB;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem addNewMovieToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cancelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnAddNewMovie;
+        private System.Windows.Forms.ToolStripMenuItem btnSave;
+        private System.Windows.Forms.ToolStripMenuItem btnDelete;
+        private System.Windows.Forms.ToolStripMenuItem btnCancel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem btnAddToFavorite;
     }
 }

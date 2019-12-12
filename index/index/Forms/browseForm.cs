@@ -15,12 +15,37 @@ namespace index.Forms
         public browseForm()
         {
             InitializeComponent();
+            this.btnAddNewMovie.Click += BtnAddNewMovie_Click;
+            this.btnSave.Click += BtnSave_Click;
+            this.btnDelete.Click += BtnDelete_Click;
             this.btnCancel.Click += BtnCancel_Click;
+            this.btnAddToFavorite.Click += BtnAddToFavorite_Click;
+        }
+
+        private void BtnAddNewMovie_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Cancel successfully.", "Cancel Form", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             this.Close();
+        }
+
+        private void BtnAddToFavorite_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using index.Forms;
 
 namespace index
 {
     
     public partial class indexForm02 : Form
     {
-        private moviesManagement Business;
+        //private moviesManagement Business;
         public indexForm02()
         {
             InitializeComponent();
@@ -23,8 +24,8 @@ namespace index
 
         void btnBrowseForMovies_Click(object sender, EventArgs e)
         {
-            //var btnBrowseForMovies = new browseForm();
-            //btnBrowseForMovies.ShowDialog();
+            var btnBrowseForMovies = new browseForm();
+            btnBrowseForMovies.ShowDialog();
         }
 
         void LlExit_Click(object sender, EventArgs e)

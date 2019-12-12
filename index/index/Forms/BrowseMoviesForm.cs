@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace index.Forms
 {
-    public partial class browseForm : Form
+    public partial class BrowseMoviesForm : Form
     {
-        public browseForm()
+        public BrowseMoviesForm()
         {
             InitializeComponent();
             this.btnAddNewMovie.Click += BtnAddNewMovie_Click;
@@ -20,6 +20,7 @@ namespace index.Forms
             this.btnDelete.Click += BtnDelete_Click;
             this.btnCancel.Click += BtnCancel_Click;
             this.btnAddToFavorite.Click += BtnAddToFavorite_Click;
+            this.btnUpdateMovie.Click += BtnUpdateMovie_Click;
         }
 
         private void BtnAddNewMovie_Click(object sender, EventArgs e)
@@ -47,5 +48,11 @@ namespace index.Forms
         {
             throw new NotImplementedException();
         }
+
+        private void BtnUpdateMovie_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

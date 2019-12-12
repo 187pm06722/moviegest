@@ -12,10 +12,10 @@ using index.Forms;
 namespace index
 {
     
-    public partial class indexForm02 : Form
+    public partial class MoviegestHomePageForm : Form
     {
         //private moviesManagement Business;
-        public indexForm02()
+        public MoviegestHomePageForm()
         {
             InitializeComponent();
             this.btnExit.Click += LlExit_Click;
@@ -24,7 +24,7 @@ namespace index
 
         void btnBrowseForMovies_Click(object sender, EventArgs e)
         {
-            var btnBrowseForMovies = new browseForm();
+            var btnBrowseForMovies = new BrowseMoviesForm();
             btnBrowseForMovies.ShowDialog();
         }
 

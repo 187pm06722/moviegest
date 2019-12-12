@@ -69,17 +69,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\browseForm.cs">
+    <Compile Include="Forms\BrowseMoviesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\browseForm.Designer.cs">
-      <DependentUpon>browseForm.cs</DependentUpon>
+    <Compile Include="Forms\BrowseMoviesForm.Designer.cs">
+      <DependentUpon>BrowseMoviesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\indexForm02.cs">
+    <Compile Include="Forms\MoviegestHomePageForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\indexForm02.Designer.cs">
-      <DependentUpon>indexForm02.cs</DependentUpon>
+    <Compile Include="Forms\MoviegestHomePageForm.Designer.cs">
+      <DependentUpon>MoviegestHomePageForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models.Context.cs">
       <AutoGen>True</AutoGen>
@@ -103,11 +103,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Logic\ViewMovie.cs" />
-    <EmbeddedResource Include="Forms\browseForm.resx">
-      <DependentUpon>browseForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\BrowseMoviesForm.resx">
+      <DependentUpon>BrowseMoviesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\indexForm02.resx">
-      <DependentUpon>indexForm02.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MoviegestHomePageForm.resx">
+      <DependentUpon>MoviegestHomePageForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,6 +1,6 @@
 ﻿namespace index
 {
-    partial class indexForm02
+    partial class MoviegestHomePageForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(indexForm02));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MoviegestHomePageForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.LinkLabel();
             this.btnBrowseForMovies = new System.Windows.Forms.LinkLabel();
@@ -156,7 +156,7 @@
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri(resources.GetString("webBrowser1.Url"), System.UriKind.Absolute);
             // 
-            // indexForm02
+            // MoviegestHomePageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -164,9 +164,9 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "indexForm02";
+            this.Name = "MoviegestHomePageForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Moviegest Index";
+            this.Text = "Moviegest home page";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoBox01)).EndInit();
             this.panel3.ResumeLayout(false);

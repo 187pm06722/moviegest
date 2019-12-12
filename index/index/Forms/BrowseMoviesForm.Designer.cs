@@ -1,6 +1,6 @@
 ﻿namespace index.Forms
 {
-    partial class browseForm
+    partial class BrowseMoviesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(browseForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrowseMoviesForm));
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.grdDB = new System.Windows.Forms.DataGridView();
@@ -37,8 +37,9 @@
             this.btnSave = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCancel = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAddToFavorite = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnUpdateMovie = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdDB)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -82,7 +83,8 @@
             this.btnSave,
             this.btnDelete,
             this.btnCancel,
-            this.btnAddToFavorite});
+            this.btnAddToFavorite,
+            this.btnUpdateMovie});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(822, 24);
@@ -113,6 +115,18 @@
             this.btnCancel.Size = new System.Drawing.Size(55, 20);
             this.btnCancel.Text = "Cancel";
             // 
+            // btnAddToFavorite
+            // 
+            this.btnAddToFavorite.Name = "btnAddToFavorite";
+            this.btnAddToFavorite.Size = new System.Drawing.Size(102, 20);
+            this.btnAddToFavorite.Text = "Add To Favorite";
+            // 
+            // btnUpdateMovie
+            // 
+            this.btnUpdateMovie.Name = "btnUpdateMovie";
+            this.btnUpdateMovie.Size = new System.Drawing.Size(93, 20);
+            this.btnUpdateMovie.Text = "Update movie";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -123,13 +137,7 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // btnAddToFavorite
-            // 
-            this.btnAddToFavorite.Name = "btnAddToFavorite";
-            this.btnAddToFavorite.Size = new System.Drawing.Size(102, 20);
-            this.btnAddToFavorite.Text = "Add To Favorite";
-            // 
-            // browseForm
+            // BrowseMoviesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,9 +149,9 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "browseForm";
+            this.Name = "BrowseMoviesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Browse For Movies Form";
+            this.Text = "Browse movies";
             ((System.ComponentModel.ISupportInitialize)(this.grdDB)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -165,5 +173,6 @@
         private System.Windows.Forms.ToolStripMenuItem btnCancel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem btnAddToFavorite;
+        private System.Windows.Forms.ToolStripMenuItem btnUpdateMovie;
     }
 }

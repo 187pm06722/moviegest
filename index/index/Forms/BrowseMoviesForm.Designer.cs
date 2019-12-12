@@ -38,7 +38,6 @@
             this.btnDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCancel = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddToFavorite = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnUpdateMovie = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdDB)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -83,8 +82,7 @@
             this.btnSave,
             this.btnDelete,
             this.btnCancel,
-            this.btnAddToFavorite,
-            this.btnUpdateMovie});
+            this.btnAddToFavorite});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(822, 24);
@@ -120,12 +118,6 @@
             this.btnAddToFavorite.Name = "btnAddToFavorite";
             this.btnAddToFavorite.Size = new System.Drawing.Size(102, 20);
             this.btnAddToFavorite.Text = "Add To Favorite";
-            // 
-            // btnUpdateMovie
-            // 
-            this.btnUpdateMovie.Name = "btnUpdateMovie";
-            this.btnUpdateMovie.Size = new System.Drawing.Size(93, 20);
-            this.btnUpdateMovie.Text = "Update movie";
             // 
             // pictureBox1
             // 
@@ -173,6 +165,5 @@
         private System.Windows.Forms.ToolStripMenuItem btnCancel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem btnAddToFavorite;
-        private System.Windows.Forms.ToolStripMenuItem btnUpdateMovie;
     }
 }

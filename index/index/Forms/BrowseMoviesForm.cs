@@ -20,7 +20,6 @@ namespace index.Forms
             this.btnDelete.Click += BtnDelete_Click;
             this.btnCancel.Click += BtnCancel_Click;
             this.btnAddToFavorite.Click += BtnAddToFavorite_Click;
-            this.btnUpdateMovie.Click += BtnUpdateMovie_Click;
         }
 
         private void BtnAddNewMovie_Click(object sender, EventArgs e)

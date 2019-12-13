@@ -24,7 +24,8 @@ namespace index.Forms
 
         private void BtnAddNewMovie_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var btnAddNewMovie = new AddNewMoviesForm();
+            btnAddNewMovie.ShowDialog();
         }
 
         private void BtnSave_Click(object sender, EventArgs e)

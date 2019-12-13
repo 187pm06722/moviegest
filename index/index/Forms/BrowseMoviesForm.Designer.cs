@@ -72,7 +72,7 @@
             this.grdDB.Location = new System.Drawing.Point(0, 89);
             this.grdDB.Name = "grdDB";
             this.grdDB.ReadOnly = true;
-            this.grdDB.Size = new System.Drawing.Size(822, 414);
+            this.grdDB.Size = new System.Drawing.Size(822, 428);
             this.grdDB.TabIndex = 2;
             // 
             // menuStrip1
@@ -133,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(822, 516);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grdDB);

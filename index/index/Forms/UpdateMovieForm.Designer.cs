@@ -34,19 +34,19 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lblOverview = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblCast = new System.Windows.Forms.Label();
             this.lblVoteCount = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txtReleaseDate = new System.Windows.Forms.TextBox();
+            this.lblDirector = new System.Windows.Forms.Label();
             this.lblVoteAverage = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.txtPopularity = new System.Windows.Forms.TextBox();
+            this.txtOverview = new System.Windows.Forms.TextBox();
+            this.txtOriginalTitle = new System.Windows.Forms.TextBox();
+            this.txtOriginalLanguage = new System.Windows.Forms.TextBox();
             this.lblRunTime = new System.Windows.Forms.Label();
             this.lblReleaseDate = new System.Windows.Forms.Label();
             this.lblPopularity = new System.Windows.Forms.Label();
@@ -62,6 +62,10 @@
             this.lblGenres = new System.Windows.Forms.Label();
             this.lblBudget = new System.Windows.Forms.Label();
             this.lblIndex = new System.Windows.Forms.Label();
+            this.txtTagline = new System.Windows.Forms.TextBox();
+            this.lblTagline = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +76,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(999, 66);
+            this.label2.Size = new System.Drawing.Size(999, 67);
             this.label2.TabIndex = 5;
             this.label2.Text = "Update Movie ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -81,23 +85,27 @@
             // 
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.textBox13);
+            this.panel1.Controls.Add(this.lblTitle);
+            this.panel1.Controls.Add(this.txtTagline);
+            this.panel1.Controls.Add(this.lblTagline);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.lblOverview);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lblCast);
             this.panel1.Controls.Add(this.lblVoteCount);
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox11);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.txtReleaseDate);
+            this.panel1.Controls.Add(this.lblDirector);
             this.panel1.Controls.Add(this.lblVoteAverage);
             this.panel1.Controls.Add(this.lblStatus);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox9);
-            this.panel1.Controls.Add(this.textBox10);
+            this.panel1.Controls.Add(this.txtTitle);
+            this.panel1.Controls.Add(this.txtPopularity);
+            this.panel1.Controls.Add(this.txtOverview);
+            this.panel1.Controls.Add(this.txtOriginalTitle);
+            this.panel1.Controls.Add(this.txtOriginalLanguage);
             this.panel1.Controls.Add(this.lblRunTime);
             this.panel1.Controls.Add(this.lblReleaseDate);
             this.panel1.Controls.Add(this.lblPopularity);
@@ -115,7 +123,7 @@
             this.panel1.Controls.Add(this.lblIndex);
             this.panel1.Location = new System.Drawing.Point(13, 122);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(998, 422);
+            this.panel1.Size = new System.Drawing.Size(998, 397);
             this.panel1.TabIndex = 6;
             // 
             // textBox1
@@ -152,21 +160,21 @@
             this.lblOverview.TabIndex = 33;
             this.lblOverview.Text = "Overview";
             // 
-            // label3
+            // lblCast
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(504, 263);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 19);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "Original title";
+            this.lblCast.AutoSize = true;
+            this.lblCast.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCast.Location = new System.Drawing.Point(504, 301);
+            this.lblCast.Name = "lblCast";
+            this.lblCast.Size = new System.Drawing.Size(39, 19);
+            this.lblCast.TabIndex = 32;
+            this.lblCast.Text = "Cast";
             // 
             // lblVoteCount
             // 
             this.lblVoteCount.AutoSize = true;
             this.lblVoteCount.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVoteCount.Location = new System.Drawing.Point(504, 221);
+            this.lblVoteCount.Location = new System.Drawing.Point(504, 259);
             this.lblVoteCount.Name = "lblVoteCount";
             this.lblVoteCount.Size = new System.Drawing.Size(84, 19);
             this.lblVoteCount.TabIndex = 31;
@@ -188,29 +196,29 @@
             this.textBox5.Size = new System.Drawing.Size(323, 27);
             this.textBox5.TabIndex = 29;
             // 
-            // textBox11
+            // txtReleaseDate
             // 
-            this.textBox11.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(646, 99);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(323, 27);
-            this.textBox11.TabIndex = 28;
+            this.txtReleaseDate.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReleaseDate.Location = new System.Drawing.Point(646, 99);
+            this.txtReleaseDate.Name = "txtReleaseDate";
+            this.txtReleaseDate.Size = new System.Drawing.Size(323, 27);
+            this.txtReleaseDate.TabIndex = 28;
             // 
-            // label5
+            // lblDirector
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(529, 353);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 19);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "Key words";
+            this.lblDirector.AutoSize = true;
+            this.lblDirector.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDirector.Location = new System.Drawing.Point(504, 339);
+            this.lblDirector.Name = "lblDirector";
+            this.lblDirector.Size = new System.Drawing.Size(66, 19);
+            this.lblDirector.TabIndex = 27;
+            this.lblDirector.Text = "Director";
             // 
             // lblVoteAverage
             // 
             this.lblVoteAverage.AutoSize = true;
             this.lblVoteAverage.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVoteAverage.Location = new System.Drawing.Point(504, 174);
+            this.lblVoteAverage.Location = new System.Drawing.Point(504, 212);
             this.lblVoteAverage.Name = "lblVoteAverage";
             this.lblVoteAverage.Size = new System.Drawing.Size(99, 19);
             this.lblVoteAverage.TabIndex = 26;
@@ -220,57 +228,57 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(504, 138);
+            this.lblStatus.Location = new System.Drawing.Point(504, 176);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(54, 19);
             this.lblStatus.TabIndex = 25;
             this.lblStatus.Text = "Status";
             // 
-            // textBox6
+            // txtTitle
             // 
-            this.textBox6.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(646, 61);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(323, 27);
-            this.textBox6.TabIndex = 24;
+            this.txtTitle.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitle.Location = new System.Drawing.Point(646, 61);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(323, 27);
+            this.txtTitle.TabIndex = 24;
             // 
-            // textBox7
+            // txtPopularity
             // 
-            this.textBox7.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(646, 21);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(323, 27);
-            this.textBox7.TabIndex = 23;
+            this.txtPopularity.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPopularity.Location = new System.Drawing.Point(162, 341);
+            this.txtPopularity.Name = "txtPopularity";
+            this.txtPopularity.Size = new System.Drawing.Size(323, 27);
+            this.txtPopularity.TabIndex = 23;
             // 
-            // textBox8
+            // txtOverview
             // 
-            this.textBox8.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(162, 298);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(323, 27);
-            this.textBox8.TabIndex = 22;
+            this.txtOverview.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOverview.Location = new System.Drawing.Point(162, 298);
+            this.txtOverview.Name = "txtOverview";
+            this.txtOverview.Size = new System.Drawing.Size(323, 27);
+            this.txtOverview.TabIndex = 22;
             // 
-            // textBox9
+            // txtOriginalTitle
             // 
-            this.textBox9.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(162, 260);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(323, 27);
-            this.textBox9.TabIndex = 21;
+            this.txtOriginalTitle.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOriginalTitle.Location = new System.Drawing.Point(162, 260);
+            this.txtOriginalTitle.Name = "txtOriginalTitle";
+            this.txtOriginalTitle.Size = new System.Drawing.Size(323, 27);
+            this.txtOriginalTitle.TabIndex = 21;
             // 
-            // textBox10
+            // txtOriginalLanguage
             // 
-            this.textBox10.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(162, 218);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(323, 27);
-            this.textBox10.TabIndex = 20;
+            this.txtOriginalLanguage.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOriginalLanguage.Location = new System.Drawing.Point(162, 218);
+            this.txtOriginalLanguage.Name = "txtOriginalLanguage";
+            this.txtOriginalLanguage.Size = new System.Drawing.Size(323, 27);
+            this.txtOriginalLanguage.TabIndex = 20;
             // 
             // lblRunTime
             // 
             this.lblRunTime.AutoSize = true;
             this.lblRunTime.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRunTime.Location = new System.Drawing.Point(504, 102);
+            this.lblRunTime.Location = new System.Drawing.Point(504, 140);
             this.lblRunTime.Name = "lblRunTime";
             this.lblRunTime.Size = new System.Drawing.Size(72, 19);
             this.lblRunTime.TabIndex = 19;
@@ -280,7 +288,7 @@
             // 
             this.lblReleaseDate.AutoSize = true;
             this.lblReleaseDate.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReleaseDate.Location = new System.Drawing.Point(504, 64);
+            this.lblReleaseDate.Location = new System.Drawing.Point(504, 102);
             this.lblReleaseDate.Name = "lblReleaseDate";
             this.lblReleaseDate.Size = new System.Drawing.Size(96, 19);
             this.lblReleaseDate.TabIndex = 18;
@@ -290,7 +298,7 @@
             // 
             this.lblPopularity.AutoSize = true;
             this.lblPopularity.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPopularity.Location = new System.Drawing.Point(504, 24);
+            this.lblPopularity.Location = new System.Drawing.Point(20, 344);
             this.lblPopularity.Name = "lblPopularity";
             this.lblPopularity.Size = new System.Drawing.Size(81, 19);
             this.lblPopularity.TabIndex = 17;
@@ -406,6 +414,42 @@
             this.lblIndex.TabIndex = 5;
             this.lblIndex.Text = "Index";
             // 
+            // txtTagline
+            // 
+            this.txtTagline.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTagline.Location = new System.Drawing.Point(646, 21);
+            this.txtTagline.Name = "txtTagline";
+            this.txtTagline.Size = new System.Drawing.Size(323, 27);
+            this.txtTagline.TabIndex = 38;
+            // 
+            // lblTagline
+            // 
+            this.lblTagline.AutoSize = true;
+            this.lblTagline.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTagline.Location = new System.Drawing.Point(504, 24);
+            this.lblTagline.Name = "lblTagline";
+            this.lblTagline.Size = new System.Drawing.Size(59, 19);
+            this.lblTagline.TabIndex = 37;
+            this.lblTagline.Text = "Tagline";
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(504, 64);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(40, 19);
+            this.lblTitle.TabIndex = 39;
+            this.lblTitle.Text = "Title";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(646, 341);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(323, 27);
+            this.textBox13.TabIndex = 40;
+            // 
             // UpdateMovieForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -425,11 +469,11 @@
         #endregion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.TextBox txtPopularity;
+        private System.Windows.Forms.TextBox txtOverview;
+        private System.Windows.Forms.TextBox txtOriginalTitle;
+        private System.Windows.Forms.TextBox txtOriginalLanguage;
         private System.Windows.Forms.Label lblRunTime;
         private System.Windows.Forms.Label lblReleaseDate;
         private System.Windows.Forms.Label lblPopularity;
@@ -449,13 +493,17 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lblOverview;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblCast;
         private System.Windows.Forms.Label lblVoteCount;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtReleaseDate;
+        private System.Windows.Forms.Label lblDirector;
         private System.Windows.Forms.Label lblVoteAverage;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.TextBox txtTagline;
+        private System.Windows.Forms.Label lblTagline;
     }
 }

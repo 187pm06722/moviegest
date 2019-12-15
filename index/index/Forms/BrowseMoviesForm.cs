@@ -12,13 +12,14 @@ using System.Data.ProviderBase;
 using System.Collections;
 using System.Configuration;
 using System.Data.SqlClient;
-
+using System;
+using System.Windows.Forms;
 
 namespace index.Forms
 {
     public partial class BrowseMoviesForm : Form
     {
-        private moviesManagement Business;
+        private FavoriteMoviesManagement Business;
         private string MovieTitle;
         //SqlConnection connection = new;
 
@@ -30,13 +31,10 @@ namespace index.Forms
         public BrowseMoviesForm()
         {
             InitializeComponent();
-            this.Business = new moviesManagement();
+            this.Business = new FavoriteMoviesManagement();
             this.MovieTitle = this.txtSearch.Text;
             this.Load +=BrowseMoviesForm_Load;
-            this.btnAddNewMovie.Click += BtnAddNewMovie_Click;
             this.btnSave.Click += BtnSave_Click;
-            this.btnDelete.Click += BtnDelete_Click;
-            this.btnCancel.Click += BtnCancel_Click;
             this.btnAddToFavorite.Click += BtnAddToFavorite_Click;
             this.btnSearch.Click += btnSearch_Click;
         }
@@ -96,10 +94,18 @@ namespace index.Forms
 
         private void BrowseMoviesForm_Load(object sender, EventArgs e)
         {
-            //this.ViewAllMovies();
-            //this.LoadAllMovies();
-            connection.Open();
-            this.ViewAMovies();
+            try
+            {
+                connection.Open();
+                this.ViewAMovies();
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+            }
             
         }
 
@@ -111,6 +117,50 @@ namespace index.Forms
         private void BrowseMoviesForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             connection.Close();
+        }
+
+        private void clearResultsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            table.Clear();
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            if(grdDB.Rows.Count==0)
+            {
+                return;
+            }
+            StringBuilder stringbuild = new StringBuilder();
+            string columnsHeader = "";
+           for (int i = 0; i < grdDB.Columns.Count; i++)
+           {
+               columnsHeader += grdDB.Columns[i].Name + ",";
+           }
+           stringbuild.Append(columnsHeader + Environment.NewLine);
+             foreach (DataGridViewRow grd in grdDB.Rows)
+           {
+               if (!grd.IsNewRow)
+               {
+                   for (int c = 0; c < grd.Cells.Count; c++)
+                   {
+                       stringbuild.Append(grd.Cells[c].Value + ",");
+                   }
+                   stringbuild.Append(Environment.NewLine);
+               }
+           }
+            
+            var saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "CSV files (*.csv)|*.csv";
+            saveFileDialog.FilterIndex = 3;
+
+            if(saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                using(System.IO.StreamWriter sw = new System.IO.StreamWriter(saveFileDialog.FileName,false))
+                {
+                    sw.WriteLine(stringbuild.ToString());
+                }
+            }
+            MessageBox.Show("CSV file saved.");
         }
 
     }

@@ -7,13 +7,8 @@ using System.Threading.Tasks;
 namespace index
 {
     
-    class moviesManagement
+    class FavoriteMoviesManagement
     {
-
-        public movie_dataset_fixed[] GetMovies()
-        {
-            return null;
-        }
 
         public movie_dataset_fixed[] GetFavoriteMovies()
         {
@@ -37,13 +32,7 @@ namespace index
 
         }
 
-        public movie_dataset_fixed GetMovie(string title)
-        {
-            var db = new moviegestDBEntities1();
-            var movie = db.movie_dataset_fixed.Find(title);
-            return movie;
-        }
-
+        
 
     }
 }

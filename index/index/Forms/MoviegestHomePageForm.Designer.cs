@@ -37,7 +37,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox01)).BeginInit();
             this.panel3.SuspendLayout();
@@ -129,7 +128,6 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.webBrowser1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(199, 0);
             this.panel3.Name = "panel3";
@@ -146,15 +144,6 @@
             this.label1.Size = new System.Drawing.Size(195, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Top rated movies from website";
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Location = new System.Drawing.Point(7, 38);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(1161, 711);
-            this.webBrowser1.TabIndex = 0;
-            this.webBrowser1.Url = new System.Uri(resources.GetString("webBrowser1.Url"), System.UriKind.Absolute);
             // 
             // MoviegestHomePageForm
             // 
@@ -185,6 +174,5 @@
         private System.Windows.Forms.LinkLabel btnBrowseForMovies;
         private System.Windows.Forms.LinkLabel btnExit;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

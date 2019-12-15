@@ -14,22 +14,22 @@ namespace index
     
     public partial class movie_dataset_fixed
     {
-        public Nullable<int> index { get; set; }
-        public Nullable<long> budget { get; set; }
+        public int index { get; set; }
+        public long budget { get; set; }
         public string genres { get; set; }
         public long id { get; set; }
         public string keywords { get; set; }
         public string original_language { get; set; }
         public string original_title { get; set; }
         public string overview { get; set; }
-        public Nullable<double> popularity { get; set; }
-        public Nullable<System.DateTime> release_date { get; set; }
-        public Nullable<int> runtime { get; set; }
+        public double popularity { get; set; }
+        public DateTime release_date { get; set; }
+        public int runtime { get; set; }
         public string status { get; set; }
         public string tagline { get; set; }
         public string title { get; set; }
-        public Nullable<double> vote_average { get; set; }
-        public Nullable<int> vote_count { get; set; }
+        public double vote_average { get; set; }
+        public int vote_count { get; set; }
         public string cast { get; set; }
         public string director { get; set; }
     }

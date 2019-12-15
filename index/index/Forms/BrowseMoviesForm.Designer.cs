@@ -60,7 +60,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(616, 27);
             this.txtSearch.TabIndex = 1;
-            this.txtSearch.Text = "         Search movie in here";
+            this.txtSearch.Text = "Search movie in here";
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // grdDB
@@ -71,7 +71,7 @@
             this.grdDB.Location = new System.Drawing.Point(12, 116);
             this.grdDB.Name = "grdDB";
             this.grdDB.ReadOnly = true;
-            this.grdDB.Size = new System.Drawing.Size(1560, 395);
+            this.grdDB.Size = new System.Drawing.Size(984, 247);
             this.grdDB.TabIndex = 2;
             // 
             // menuStrip1
@@ -84,7 +84,7 @@
             this.btnAddToFavorite});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1584, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1006, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -134,7 +134,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(1584, 652);
+            this.ClientSize = new System.Drawing.Size(1006, 470);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.grdDB);
             this.Controls.Add(this.txtSearch);

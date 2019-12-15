@@ -13,13 +13,20 @@ using System.Collections;
 using System.Configuration;
 using System.Data.SqlClient;
 
+
 namespace index.Forms
 {
     public partial class BrowseMoviesForm : Form
     {
         private moviesManagement Business;
         private string MovieTitle;
-        SqlConnection con;
+        //SqlConnection connection = new;
+
+        SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString);
+        SqlCommand command;
+        string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\augus\OneDrive\Documents\moviegestDB.mdf;Integrated Security=True;Connect Timeout=30";
+        SqlDataAdapter adapter = new SqlDataAdapter();
+        DataTable table = new DataTable();
         public BrowseMoviesForm()
         {
             InitializeComponent();
@@ -36,7 +43,7 @@ namespace index.Forms
 
         void btnSearch_Click(object sender, EventArgs e)
         {
-            ViewAMovies();            
+            this.ViewAMovies();            
             //throw new NotImplementedException();
         }
 
@@ -47,15 +54,12 @@ namespace index.Forms
             //this.grdDB.DataSource = db.movie_dataset_fixed.SqlQuery("Select * from movie_dataset_fixed where title like (" + this.txtSearch.Text + ")");
             //this.grdDB.DataSource = db.movie_dataset_fixed.Where(p => p.title.Equals(this.txtSearch.Text)).ToList();
             //string sqlSELECT = "SELECT * FROM movie_dataset_fixed where title like ("+this.txtSearch.Text+")";
-            string sqlSELECT = "SELECT * FROM movie_dataset_fixed where title like ('avatar')";
-            SqlCommand cmd = new SqlCommand(sqlSELECT,con);
-            SqlDataReader dr = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Load(dr);
-            grdDB.DataSource = dt;
-
-
-
+            command = connection.CreateCommand();
+            command.CommandText = "SELECT * FROM movie_dataset_fixed where title like ('%"+this.txtSearch.Text+"%')";
+            adapter.SelectCommand = command;
+            //table.Clear();
+            adapter.Fill(table);
+            grdDB.DataSource = table;
         }
        
         private void BtnAddNewMovie_Click(object sender, EventArgs e)
@@ -94,10 +98,8 @@ namespace index.Forms
         {
             //this.ViewAllMovies();
             //this.LoadAllMovies();
-            string conString = ConfigurationManager.ConnectionStrings["moviegest"].ConnectionString.ToString();
-            con = new SqlConnection(conString);
-            con.Open();
-            ViewAMovies();
+            connection.Open();
+            this.ViewAMovies();
             
         }
 
@@ -108,7 +110,7 @@ namespace index.Forms
 
         private void BrowseMoviesForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            con.Close();
+            connection.Close();
         }
 
     }

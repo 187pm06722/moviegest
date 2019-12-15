@@ -13,7 +13,7 @@ namespace index
 
         public ViewMovie(moviegestDBEntities1 movie)
         {
-            
+        
         }
     }
 }

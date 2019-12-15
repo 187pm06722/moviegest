@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrowseMoviesForm));
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.grdDB = new System.Windows.Forms.DataGridView();
@@ -38,10 +37,9 @@
             this.btnDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCancel = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddToFavorite = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdDB)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSearch
@@ -58,21 +56,22 @@
             // 
             this.txtSearch.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.Silver;
-            this.txtSearch.Location = new System.Drawing.Point(162, 45);
+            this.txtSearch.Location = new System.Drawing.Point(143, 45);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(597, 27);
+            this.txtSearch.Size = new System.Drawing.Size(616, 27);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.Text = "         Search movie in here";
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // grdDB
             // 
             this.grdDB.AllowUserToAddRows = false;
             this.grdDB.AllowUserToDeleteRows = false;
             this.grdDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdDB.Location = new System.Drawing.Point(0, 89);
+            this.grdDB.Location = new System.Drawing.Point(12, 116);
             this.grdDB.Name = "grdDB";
             this.grdDB.ReadOnly = true;
-            this.grdDB.Size = new System.Drawing.Size(822, 428);
+            this.grdDB.Size = new System.Drawing.Size(1560, 395);
             this.grdDB.TabIndex = 2;
             // 
             // menuStrip1
@@ -85,7 +84,7 @@
             this.btnAddToFavorite});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(822, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1584, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -116,26 +115,27 @@
             // btnAddToFavorite
             // 
             this.btnAddToFavorite.Name = "btnAddToFavorite";
-            this.btnAddToFavorite.Size = new System.Drawing.Size(102, 20);
+            this.btnAddToFavorite.Size = new System.Drawing.Size(101, 20);
             this.btnAddToFavorite.Text = "Add To Favorite";
             // 
-            // pictureBox1
+            // label2
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(162, 45);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 28);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Corbel", 10F);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(12, 90);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 17);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Search Result Table";
             // 
             // BrowseMoviesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(822, 516);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(1584, 652);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.grdDB);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);
@@ -144,10 +144,11 @@
             this.Name = "BrowseMoviesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Browse movies";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BrowseMoviesForm_FormClosing);
+            this.Load += new System.EventHandler(this.BrowseMoviesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdDB)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,7 +164,7 @@
         private System.Windows.Forms.ToolStripMenuItem btnSave;
         private System.Windows.Forms.ToolStripMenuItem btnDelete;
         private System.Windows.Forms.ToolStripMenuItem btnCancel;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem btnAddToFavorite;
+        private System.Windows.Forms.Label label2;
     }
 }

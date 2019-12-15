@@ -12,9 +12,14 @@ namespace index
 
         public movie_dataset_fixed[] GetMovies()
         {
-            var db = new moviegestDBEntities1();
-            var movies = db.movie_dataset_fixed.ToArray();
-            return movies;
+            return null;
+        }
+
+        public movie_dataset_fixed[] GetFavoriteMovies()
+        {
+
+
+            return null;
         }
 
         public void AddMovies()

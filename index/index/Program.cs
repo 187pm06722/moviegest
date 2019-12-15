@@ -17,7 +17,7 @@ namespace index.Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddNewMoviesForm());
+            Application.Run(new BrowseMoviesForm());
         }
     }
 }

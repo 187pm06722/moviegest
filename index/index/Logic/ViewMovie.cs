@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace index
 {
-    class ViewMovie
+    public class ViewMovie
     {
         
+
+
+        public ViewMovie(moviegestDBEntities1 movie)
+        {
+            
+        }
     }
 }

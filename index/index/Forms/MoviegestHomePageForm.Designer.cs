@@ -80,7 +80,7 @@
             this.btnBrowseForMovies.Image = ((System.Drawing.Image)(resources.GetObject("btnBrowseForMovies.Image")));
             this.btnBrowseForMovies.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnBrowseForMovies.LinkColor = System.Drawing.Color.White;
-            this.btnBrowseForMovies.Location = new System.Drawing.Point(1, 124);
+            this.btnBrowseForMovies.Location = new System.Drawing.Point(3, 234);
             this.btnBrowseForMovies.Name = "btnBrowseForMovies";
             this.btnBrowseForMovies.Size = new System.Drawing.Size(197, 112);
             this.btnBrowseForMovies.TabIndex = 3;
@@ -97,7 +97,7 @@
             this.btnYourFavorites.Image = ((System.Drawing.Image)(resources.GetObject("btnYourFavorites.Image")));
             this.btnYourFavorites.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnYourFavorites.LinkColor = System.Drawing.Color.White;
-            this.btnYourFavorites.Location = new System.Drawing.Point(3, 244);
+            this.btnYourFavorites.Location = new System.Drawing.Point(-1, 124);
             this.btnYourFavorites.Name = "btnYourFavorites";
             this.btnYourFavorites.Size = new System.Drawing.Size(197, 101);
             this.btnYourFavorites.TabIndex = 2;

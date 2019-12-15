@@ -21,6 +21,7 @@ namespace index.Forms
     {
         private FavoriteMoviesManagement Business;
         private string MovieTitle;
+        private bool isEmpty = true;
         //SqlConnection connection = new;
 
         SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString);
@@ -52,12 +53,21 @@ namespace index.Forms
             //this.grdDB.DataSource = db.movie_dataset_fixed.SqlQuery("Select * from movie_dataset_fixed where title like (" + this.txtSearch.Text + ")");
             //this.grdDB.DataSource = db.movie_dataset_fixed.Where(p => p.title.Equals(this.txtSearch.Text)).ToList();
             //string sqlSELECT = "SELECT * FROM movie_dataset_fixed where title like ("+this.txtSearch.Text+")";
-            command = connection.CreateCommand();
-            command.CommandText = "SELECT * FROM movie_dataset_fixed where title like ('%"+this.txtSearch.Text+"%')";
-            adapter.SelectCommand = command;
-            //table.Clear();
-            adapter.Fill(table);
-            grdDB.DataSource = table;
+            if(this.txtSearch.Text.Equals(""))
+            {
+                return;
+            }
+            else
+            {
+                command = connection.CreateCommand();
+                command.CommandText = "SELECT * FROM movie_dataset_fixed where title like ('%" + this.txtSearch.Text + "%')";
+                adapter.SelectCommand = command;
+                //table.Clear();
+                adapter.Fill(table);
+                grdDB.DataSource = table;
+            }
+            
+            
         }
        
         private void BtnAddNewMovie_Click(object sender, EventArgs e)
@@ -111,7 +121,7 @@ namespace index.Forms
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            //do nothing
+            //
         }
 
         private void BrowseMoviesForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -161,6 +171,14 @@ namespace index.Forms
                 }
             }
             MessageBox.Show("CSV file saved.");
+        }
+
+        private void deleteARecordToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            foreach (DataGridViewRow item in this.grdDB.SelectedRows)
+            {
+                grdDB.Rows.RemoveAt(item.Index);
+            }
         }
 
     }

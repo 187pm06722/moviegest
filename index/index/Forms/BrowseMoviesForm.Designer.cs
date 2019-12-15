@@ -35,7 +35,6 @@
             this.btnSave = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddToFavorite = new System.Windows.Forms.ToolStripMenuItem();
             this.clearResultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.getRecommendationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.deleteARecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.grdDB)).BeginInit();
@@ -60,7 +59,6 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(616, 27);
             this.txtSearch.TabIndex = 1;
-            this.txtSearch.Text = "Search movie in here";
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // grdDB
@@ -78,7 +76,6 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.getRecommendationToolStripMenuItem,
             this.btnAddToFavorite,
             this.clearResultsToolStripMenuItem,
             this.btnSave,
@@ -109,12 +106,6 @@
             this.clearResultsToolStripMenuItem.Text = "Clear Results";
             this.clearResultsToolStripMenuItem.Click += new System.EventHandler(this.clearResultsToolStripMenuItem_Click);
             // 
-            // getRecommendationToolStripMenuItem
-            // 
-            this.getRecommendationToolStripMenuItem.Name = "getRecommendationToolStripMenuItem";
-            this.getRecommendationToolStripMenuItem.Size = new System.Drawing.Size(135, 20);
-            this.getRecommendationToolStripMenuItem.Text = "Get Recommendation";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -131,6 +122,7 @@
             this.deleteARecordToolStripMenuItem.Name = "deleteARecordToolStripMenuItem";
             this.deleteARecordToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
             this.deleteARecordToolStripMenuItem.Text = "Delete A Record";
+            this.deleteARecordToolStripMenuItem.Click += new System.EventHandler(this.deleteARecordToolStripMenuItem_Click);
             // 
             // BrowseMoviesForm
             // 
@@ -146,7 +138,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "BrowseMoviesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Browse movies";
+            this.Text = "Browse Movies from Local Database";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BrowseMoviesForm_FormClosing);
             this.Load += new System.EventHandler(this.BrowseMoviesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdDB)).EndInit();
@@ -167,7 +159,6 @@
         private System.Windows.Forms.ToolStripMenuItem btnAddToFavorite;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem clearResultsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem getRecommendationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteARecordToolStripMenuItem;
     }
 }

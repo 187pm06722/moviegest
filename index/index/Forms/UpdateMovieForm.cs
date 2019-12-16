@@ -12,10 +12,31 @@ namespace index.Forms
 {
     public partial class UpdateMovieForm : Form
     {
-        public UpdateMovieForm()
+        private int movieId;
+        private FavoriteMoviesManagement Business;
+        public UpdateMovieForm(int id)
         {
             InitializeComponent();
+            this.movieId = id;
+            this.Business = new FavoriteMoviesManagement();
+            this.btnUpdate.Click += btnUpdate_Click;
             this.btnCancel.Click += BtnCancel_Click;
+            this.Load += UpdateMovieForm_Load;
+        }
+
+        void UpdateMovieForm_Load(object sender, EventArgs e)
+        {
+            
+            
+            //throw new NotImplementedException();
+        }
+
+        void btnUpdate_Click(object sender, EventArgs e)
+        {
+            
+            
+            
+            //throw new NotImplementedException();
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)

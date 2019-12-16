@@ -37,6 +37,7 @@
             this.clearResultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.deleteARecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewMovieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.grdDB)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -79,7 +80,8 @@
             this.btnAddToFavorite,
             this.clearResultsToolStripMenuItem,
             this.btnSave,
-            this.deleteARecordToolStripMenuItem});
+            this.deleteARecordToolStripMenuItem,
+            this.addNewMovieToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1006, 24);
@@ -124,6 +126,13 @@
             this.deleteARecordToolStripMenuItem.Text = "Delete A Record";
             this.deleteARecordToolStripMenuItem.Click += new System.EventHandler(this.deleteARecordToolStripMenuItem_Click);
             // 
+            // addNewMovieToolStripMenuItem
+            // 
+            this.addNewMovieToolStripMenuItem.Name = "addNewMovieToolStripMenuItem";
+            this.addNewMovieToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
+            this.addNewMovieToolStripMenuItem.Text = "Add New Movie";
+            this.addNewMovieToolStripMenuItem.Click += new System.EventHandler(this.addNewMovieToolStripMenuItem_Click);
+            // 
             // BrowseMoviesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -160,5 +169,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem clearResultsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteARecordToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewMovieToolStripMenuItem;
     }
 }

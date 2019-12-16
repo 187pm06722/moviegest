@@ -17,7 +17,7 @@ namespace index
         public int index { get; set; }
         public long budget { get; set; }
         public string genres { get; set; }
-        public long id { get; set; }
+        public int id { get; set; }
         public string keywords { get; set; }
         public string original_language { get; set; }
         public string original_title { get; set; }

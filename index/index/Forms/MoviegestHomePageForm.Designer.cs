@@ -36,7 +36,10 @@
             this.logoBox01 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.favoriteBox = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox01)).BeginInit();
             this.panel3.SuspendLayout();
@@ -64,9 +67,9 @@
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnExit.LinkColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(-1, 346);
+            this.btnExit.Location = new System.Drawing.Point(9, 372);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(197, 84);
+            this.btnExit.Size = new System.Drawing.Size(187, 84);
             this.btnExit.TabIndex = 4;
             this.btnExit.TabStop = true;
             this.btnExit.Text = "Exit";
@@ -80,9 +83,9 @@
             this.btnBrowseForMovies.Image = ((System.Drawing.Image)(resources.GetObject("btnBrowseForMovies.Image")));
             this.btnBrowseForMovies.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnBrowseForMovies.LinkColor = System.Drawing.Color.White;
-            this.btnBrowseForMovies.Location = new System.Drawing.Point(3, 234);
+            this.btnBrowseForMovies.Location = new System.Drawing.Point(5, 240);
             this.btnBrowseForMovies.Name = "btnBrowseForMovies";
-            this.btnBrowseForMovies.Size = new System.Drawing.Size(197, 112);
+            this.btnBrowseForMovies.Size = new System.Drawing.Size(190, 112);
             this.btnBrowseForMovies.TabIndex = 3;
             this.btnBrowseForMovies.TabStop = true;
             this.btnBrowseForMovies.Text = "Browse For Movies";
@@ -97,9 +100,9 @@
             this.btnYourFavorites.Image = ((System.Drawing.Image)(resources.GetObject("btnYourFavorites.Image")));
             this.btnYourFavorites.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnYourFavorites.LinkColor = System.Drawing.Color.White;
-            this.btnYourFavorites.Location = new System.Drawing.Point(-1, 124);
+            this.btnYourFavorites.Location = new System.Drawing.Point(7, 124);
             this.btnYourFavorites.Name = "btnYourFavorites";
-            this.btnYourFavorites.Size = new System.Drawing.Size(197, 101);
+            this.btnYourFavorites.Size = new System.Drawing.Size(189, 101);
             this.btnYourFavorites.TabIndex = 2;
             this.btnYourFavorites.TabStop = true;
             this.btnYourFavorites.Text = "Your Favorites";
@@ -109,9 +112,9 @@
             // 
             this.logoBox01.BackColor = System.Drawing.Color.Transparent;
             this.logoBox01.Image = ((System.Drawing.Image)(resources.GetObject("logoBox01.Image")));
-            this.logoBox01.Location = new System.Drawing.Point(0, 0);
+            this.logoBox01.Location = new System.Drawing.Point(5, 0);
             this.logoBox01.Name = "logoBox01";
-            this.logoBox01.Size = new System.Drawing.Size(199, 121);
+            this.logoBox01.Size = new System.Drawing.Size(187, 121);
             this.logoBox01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoBox01.TabIndex = 1;
             this.logoBox01.TabStop = false;
@@ -126,7 +129,10 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.favoriteBox);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(199, 0);
@@ -134,16 +140,48 @@
             this.panel3.Size = new System.Drawing.Size(1171, 749);
             this.panel3.TabIndex = 2;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(15, 494);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(187, 18);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Our recommendation for you";
+            // 
+            // favoriteBox
+            // 
+            this.favoriteBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.favoriteBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.favoriteBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.favoriteBox.Location = new System.Drawing.Point(44, 141);
+            this.favoriteBox.Name = "favoriteBox";
+            this.favoriteBox.Size = new System.Drawing.Size(1080, 327);
+            this.favoriteBox.TabIndex = 2;
+            this.favoriteBox.Text = "";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(6, 11);
+            this.label1.Location = new System.Drawing.Point(15, 103);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 18);
+            this.label1.Size = new System.Drawing.Size(87, 18);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Top rated movies from website";
+            this.label1.Text = "Your favorite";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(235, 503);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MoviegestHomePageForm
             // 
@@ -156,6 +194,7 @@
             this.Name = "MoviegestHomePageForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Moviegest home page";
+            this.Load += new System.EventHandler(this.MoviegestHomePageForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoBox01)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -174,5 +213,8 @@
         private System.Windows.Forms.LinkLabel btnBrowseForMovies;
         private System.Windows.Forms.LinkLabel btnExit;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RichTextBox favoriteBox;
+        private System.Windows.Forms.Button button1;
     }
 }

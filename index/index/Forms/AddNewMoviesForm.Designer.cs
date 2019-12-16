@@ -66,12 +66,10 @@ namespace index.Forms
             this.lblOriginalTitle = new System.Windows.Forms.Label();
             this.lblOriginalLanguage = new System.Windows.Forms.Label();
             this.txtKeyWords = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
             this.txtGeners = new System.Windows.Forms.TextBox();
             this.txtBudget = new System.Windows.Forms.TextBox();
             this.txtIndex = new System.Windows.Forms.TextBox();
             this.lblKeyWords = new System.Windows.Forms.Label();
-            this.lblId = new System.Windows.Forms.Label();
             this.lblGenres = new System.Windows.Forms.Label();
             this.lblBudget = new System.Windows.Forms.Label();
             this.lblIndex = new System.Windows.Forms.Label();
@@ -119,12 +117,10 @@ namespace index.Forms
             this.panel1.Controls.Add(this.lblOriginalTitle);
             this.panel1.Controls.Add(this.lblOriginalLanguage);
             this.panel1.Controls.Add(this.txtKeyWords);
-            this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.txtGeners);
             this.panel1.Controls.Add(this.txtBudget);
             this.panel1.Controls.Add(this.txtIndex);
             this.panel1.Controls.Add(this.lblKeyWords);
-            this.panel1.Controls.Add(this.lblId);
             this.panel1.Controls.Add(this.lblGenres);
             this.panel1.Controls.Add(this.lblBudget);
             this.panel1.Controls.Add(this.lblIndex);
@@ -209,7 +205,7 @@ namespace index.Forms
             this.lblOverview.AutoSize = true;
             this.lblOverview.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOverview.ForeColor = System.Drawing.Color.White;
-            this.lblOverview.Location = new System.Drawing.Point(22, 304);
+            this.lblOverview.Location = new System.Drawing.Point(22, 271);
             this.lblOverview.Name = "lblOverview";
             this.lblOverview.Size = new System.Drawing.Size(75, 19);
             this.lblOverview.TabIndex = 33;
@@ -297,7 +293,7 @@ namespace index.Forms
             // txtPopularity
             // 
             this.txtPopularity.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPopularity.Location = new System.Drawing.Point(162, 341);
+            this.txtPopularity.Location = new System.Drawing.Point(162, 308);
             this.txtPopularity.Name = "txtPopularity";
             this.txtPopularity.Size = new System.Drawing.Size(323, 27);
             this.txtPopularity.TabIndex = 23;
@@ -305,7 +301,7 @@ namespace index.Forms
             // txtOverview
             // 
             this.txtOverview.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOverview.Location = new System.Drawing.Point(162, 301);
+            this.txtOverview.Location = new System.Drawing.Point(162, 268);
             this.txtOverview.Name = "txtOverview";
             this.txtOverview.Size = new System.Drawing.Size(323, 27);
             this.txtOverview.TabIndex = 22;
@@ -313,7 +309,7 @@ namespace index.Forms
             // txtOriginalTitle
             // 
             this.txtOriginalTitle.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOriginalTitle.Location = new System.Drawing.Point(162, 260);
+            this.txtOriginalTitle.Location = new System.Drawing.Point(162, 227);
             this.txtOriginalTitle.Name = "txtOriginalTitle";
             this.txtOriginalTitle.Size = new System.Drawing.Size(323, 27);
             this.txtOriginalTitle.TabIndex = 21;
@@ -321,7 +317,7 @@ namespace index.Forms
             // txtOriginalLanguage
             // 
             this.txtOriginalLanguage.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOriginalLanguage.Location = new System.Drawing.Point(162, 221);
+            this.txtOriginalLanguage.Location = new System.Drawing.Point(162, 188);
             this.txtOriginalLanguage.Name = "txtOriginalLanguage";
             this.txtOriginalLanguage.Size = new System.Drawing.Size(323, 27);
             this.txtOriginalLanguage.TabIndex = 20;
@@ -353,7 +349,7 @@ namespace index.Forms
             this.lblPopularity.AutoSize = true;
             this.lblPopularity.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPopularity.ForeColor = System.Drawing.Color.White;
-            this.lblPopularity.Location = new System.Drawing.Point(22, 344);
+            this.lblPopularity.Location = new System.Drawing.Point(22, 311);
             this.lblPopularity.Name = "lblPopularity";
             this.lblPopularity.Size = new System.Drawing.Size(81, 19);
             this.lblPopularity.TabIndex = 17;
@@ -364,7 +360,7 @@ namespace index.Forms
             this.lblOriginalTitle.AutoSize = true;
             this.lblOriginalTitle.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOriginalTitle.ForeColor = System.Drawing.Color.White;
-            this.lblOriginalTitle.Location = new System.Drawing.Point(20, 263);
+            this.lblOriginalTitle.Location = new System.Drawing.Point(20, 230);
             this.lblOriginalTitle.Name = "lblOriginalTitle";
             this.lblOriginalTitle.Size = new System.Drawing.Size(96, 19);
             this.lblOriginalTitle.TabIndex = 16;
@@ -375,7 +371,7 @@ namespace index.Forms
             this.lblOriginalLanguage.AutoSize = true;
             this.lblOriginalLanguage.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOriginalLanguage.ForeColor = System.Drawing.Color.White;
-            this.lblOriginalLanguage.Location = new System.Drawing.Point(20, 224);
+            this.lblOriginalLanguage.Location = new System.Drawing.Point(20, 191);
             this.lblOriginalLanguage.Name = "lblOriginalLanguage";
             this.lblOriginalLanguage.Size = new System.Drawing.Size(132, 19);
             this.lblOriginalLanguage.TabIndex = 15;
@@ -384,23 +380,15 @@ namespace index.Forms
             // txtKeyWords
             // 
             this.txtKeyWords.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKeyWords.Location = new System.Drawing.Point(162, 179);
+            this.txtKeyWords.Location = new System.Drawing.Point(162, 146);
             this.txtKeyWords.Name = "txtKeyWords";
             this.txtKeyWords.Size = new System.Drawing.Size(323, 27);
             this.txtKeyWords.TabIndex = 14;
             // 
-            // txtId
-            // 
-            this.txtId.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(162, 138);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(323, 27);
-            this.txtId.TabIndex = 13;
-            // 
             // txtGeners
             // 
             this.txtGeners.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGeners.Location = new System.Drawing.Point(162, 99);
+            this.txtGeners.Location = new System.Drawing.Point(162, 101);
             this.txtGeners.Name = "txtGeners";
             this.txtGeners.Size = new System.Drawing.Size(323, 27);
             this.txtGeners.TabIndex = 12;
@@ -408,7 +396,7 @@ namespace index.Forms
             // txtBudget
             // 
             this.txtBudget.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBudget.Location = new System.Drawing.Point(162, 61);
+            this.txtBudget.Location = new System.Drawing.Point(162, 63);
             this.txtBudget.Name = "txtBudget";
             this.txtBudget.Size = new System.Drawing.Size(323, 27);
             this.txtBudget.TabIndex = 11;
@@ -416,7 +404,7 @@ namespace index.Forms
             // txtIndex
             // 
             this.txtIndex.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIndex.Location = new System.Drawing.Point(162, 21);
+            this.txtIndex.Location = new System.Drawing.Point(162, 23);
             this.txtIndex.Name = "txtIndex";
             this.txtIndex.Size = new System.Drawing.Size(323, 27);
             this.txtIndex.TabIndex = 10;
@@ -426,29 +414,18 @@ namespace index.Forms
             this.lblKeyWords.AutoSize = true;
             this.lblKeyWords.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKeyWords.ForeColor = System.Drawing.Color.White;
-            this.lblKeyWords.Location = new System.Drawing.Point(20, 182);
+            this.lblKeyWords.Location = new System.Drawing.Point(20, 149);
             this.lblKeyWords.Name = "lblKeyWords";
             this.lblKeyWords.Size = new System.Drawing.Size(81, 19);
             this.lblKeyWords.TabIndex = 9;
             this.lblKeyWords.Text = "Key words";
-            // 
-            // lblId
-            // 
-            this.lblId.AutoSize = true;
-            this.lblId.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.ForeColor = System.Drawing.Color.White;
-            this.lblId.Location = new System.Drawing.Point(22, 141);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(22, 19);
-            this.lblId.TabIndex = 8;
-            this.lblId.Text = "Id";
             // 
             // lblGenres
             // 
             this.lblGenres.AutoSize = true;
             this.lblGenres.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGenres.ForeColor = System.Drawing.Color.White;
-            this.lblGenres.Location = new System.Drawing.Point(22, 105);
+            this.lblGenres.Location = new System.Drawing.Point(22, 107);
             this.lblGenres.Name = "lblGenres";
             this.lblGenres.Size = new System.Drawing.Size(58, 19);
             this.lblGenres.TabIndex = 7;
@@ -459,7 +436,7 @@ namespace index.Forms
             this.lblBudget.AutoSize = true;
             this.lblBudget.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBudget.ForeColor = System.Drawing.Color.White;
-            this.lblBudget.Location = new System.Drawing.Point(22, 64);
+            this.lblBudget.Location = new System.Drawing.Point(22, 66);
             this.lblBudget.Name = "lblBudget";
             this.lblBudget.Size = new System.Drawing.Size(60, 19);
             this.lblBudget.TabIndex = 6;
@@ -470,7 +447,7 @@ namespace index.Forms
             this.lblIndex.AutoSize = true;
             this.lblIndex.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIndex.ForeColor = System.Drawing.Color.White;
-            this.lblIndex.Location = new System.Drawing.Point(22, 24);
+            this.lblIndex.Location = new System.Drawing.Point(22, 26);
             this.lblIndex.Name = "lblIndex";
             this.lblIndex.Size = new System.Drawing.Size(47, 19);
             this.lblIndex.TabIndex = 5;
@@ -598,12 +575,10 @@ namespace index.Forms
         private System.Windows.Forms.Label lblOriginalTitle;
         private System.Windows.Forms.Label lblOriginalLanguage;
         private System.Windows.Forms.TextBox txtKeyWords;
-        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtGeners;
         private System.Windows.Forms.TextBox txtBudget;
         private System.Windows.Forms.TextBox txtIndex;
         private System.Windows.Forms.Label lblKeyWords;
-        private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label lblGenres;
         private System.Windows.Forms.Label lblBudget;
         private System.Windows.Forms.Label lblIndex;

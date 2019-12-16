@@ -7,13 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Linq;
+//using System.Linq;
 using System.Data.ProviderBase;
 using System.Collections;
 using System.Configuration;
 using System.Data.SqlClient;
-using System;
-using System.Windows.Forms;
+
 
 namespace index.Forms
 {
@@ -21,12 +20,12 @@ namespace index.Forms
     {
         private FavoriteMoviesManagement Business;
         private string MovieTitle;
-        private bool isEmpty = true;
+        //private bool isEmpty = true;
         //SqlConnection connection = new;
 
         SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString);
         SqlCommand command;
-        string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\augus\OneDrive\Documents\moviegestDB.mdf;Integrated Security=True;Connect Timeout=30";
+        //string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\augus\OneDrive\Documents\moviegestDB.mdf;Integrated Security=True;Connect Timeout=30";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
         public BrowseMoviesForm()
@@ -38,15 +37,31 @@ namespace index.Forms
             this.btnSave.Click += BtnSave_Click;
             this.btnAddToFavorite.Click += BtnAddToFavorite_Click;
             this.btnSearch.Click += btnSearch_Click;
+            this.grdDB.DoubleClick += grdDB_DoubleClick;
+        }
+
+        void grdDB_DoubleClick(object sender, EventArgs e)
+        {
+            if (this.grdDB.SelectedRows.Count == 1)
+            {
+                int a = 0;
+                var movieZ = (ViewMovie)this.grdDB.SelectedRows[0].DataBoundItem;
+                a = movieZ.Id; 
+                var updateform = new UpdateMovieForm(a);
+                updateform.ShowDialog();
+                this.ViewAnyMovies();
+
+            }
+            //throw new NotImplementedException();
         }
 
         void btnSearch_Click(object sender, EventArgs e)
         {
-            this.ViewAMovies();            
+            this.ViewAnyMovies();            
             //throw new NotImplementedException();
         }
 
-        private void ViewAMovies()
+        private void ViewAnyMovies()
         {
             var db = new moviegestDBEntities1();
 
@@ -70,11 +85,7 @@ namespace index.Forms
             
         }
        
-        private void BtnAddNewMovie_Click(object sender, EventArgs e)
-        {
-            var btnAddNewMovie = new AddNewMoviesForm();
-            btnAddNewMovie.ShowDialog();
-        }
+        
 
         private void BtnSave_Click(object sender, EventArgs e)
         {
@@ -99,6 +110,8 @@ namespace index.Forms
 
         private void BtnUpdateMovie_Click(object sender, EventArgs e)
         {
+            
+            
             //throw new NotImplementedException();
         }
 
@@ -107,7 +120,7 @@ namespace index.Forms
             try
             {
                 connection.Open();
-                this.ViewAMovies();
+                this.ViewAnyMovies();
             }catch(Exception ex)
             {
                 throw ex;
@@ -179,6 +192,12 @@ namespace index.Forms
             {
                 grdDB.Rows.RemoveAt(item.Index);
             }
+        }
+
+        private void addNewMovieToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            var btnAddNewMovie = new AddNewMoviesForm();
+            btnAddNewMovie.ShowDialog();
         }
 
     }

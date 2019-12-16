@@ -14,12 +14,13 @@ namespace index
     
     public partial class MoviegestHomePageForm : Form
     {
-        //private moviesManagement Business;
+        private FavoriteMoviesManagement Business;
         public MoviegestHomePageForm()
         {
             InitializeComponent();
             this.btnExit.Click += LlExit_Click;
             this.btnBrowseForMovies.Click += btnBrowseForMovies_Click;
+            
         }
 
         void btnBrowseForMovies_Click(object sender, EventArgs e)
@@ -47,6 +48,25 @@ namespace index
 
         private void btnBrowseForMovies_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+
+        }
+
+        private void MoviegestHomePageForm_Load(object sender, EventArgs e)
+        {
+
+            //this.reportViewer1.RefreshReport();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Business.pythonRead();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+            }
 
         }
     }

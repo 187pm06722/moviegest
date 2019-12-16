@@ -494,7 +494,7 @@ namespace index.Forms
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(-3, -2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1042, 67);
+            this.label1.Size = new System.Drawing.Size(1000, 67);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add New Movies";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -506,7 +506,7 @@ namespace index.Forms
             this.btnAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnAdd.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(681, 548);
+            this.btnAdd.Location = new System.Drawing.Point(820, 548);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(105, 41);
             this.btnAdd.TabIndex = 10;
@@ -520,7 +520,7 @@ namespace index.Forms
             this.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnCancel.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(830, 548);
+            this.btnCancel.Location = new System.Drawing.Point(943, 548);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(105, 41);
             this.btnCancel.TabIndex = 9;
@@ -546,7 +546,7 @@ namespace index.Forms
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label4.Location = new System.Drawing.Point(1077, -4);
+            this.label4.Location = new System.Drawing.Point(1076, -4);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(23, 1142);
             this.label4.TabIndex = 13;

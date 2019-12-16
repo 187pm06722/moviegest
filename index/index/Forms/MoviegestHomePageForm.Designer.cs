@@ -39,7 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.favoriteBox = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rtxtRecommend2 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox01)).BeginInit();
             this.panel3.SuspendLayout();
@@ -130,7 +130,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.rtxtRecommend2);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.favoriteBox);
             this.panel3.Controls.Add(this.label1);
@@ -145,11 +145,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(15, 494);
+            this.label2.Location = new System.Drawing.Point(15, 488);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 18);
+            this.label2.Size = new System.Drawing.Size(348, 18);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Our recommendation for you";
+            this.label2.Text = "Based on your lastest search, you might want to watch..";
             // 
             // favoriteBox
             // 
@@ -173,15 +173,16 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Your favorite";
             // 
-            // button1
+            // rtxtRecommend2
             // 
-            this.button1.Location = new System.Drawing.Point(235, 503);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.rtxtRecommend2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.rtxtRecommend2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtRecommend2.ForeColor = System.Drawing.SystemColors.Window;
+            this.rtxtRecommend2.Location = new System.Drawing.Point(44, 515);
+            this.rtxtRecommend2.Name = "rtxtRecommend2";
+            this.rtxtRecommend2.Size = new System.Drawing.Size(1080, 222);
+            this.rtxtRecommend2.TabIndex = 4;
+            this.rtxtRecommend2.Text = "";
             // 
             // MoviegestHomePageForm
             // 
@@ -215,6 +216,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox favoriteBox;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox rtxtRecommend2;
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using index.Forms;
+using System.IO;
 
 namespace index
 {
@@ -54,6 +55,18 @@ namespace index
         private void MoviegestHomePageForm_Load(object sender, EventArgs e)
         {
 
+            try
+            {
+                StreamReader stringx = new StreamReader(@"C:\Users\augus\source\repos\moviegest01\moviegest\index\index\Logic\Python\recommendedList2.txt");
+                string data = stringx.ReadToEnd();
+                this.rtxtRecommend2.Text = data;
+                
+            }
+            catch(Exception ez)
+            {
+                Console.WriteLine(ez.Message.ToString());
+            }
+            
             //this.reportViewer1.RefreshReport();
         }
 
@@ -61,7 +74,7 @@ namespace index
         {
             try
             {
-                this.Business.pythonRead();
+                //this.Business.callPython();
             }
             catch(Exception ex)
             {

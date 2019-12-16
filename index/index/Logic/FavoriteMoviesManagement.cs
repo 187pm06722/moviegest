@@ -61,25 +61,11 @@ namespace index
             return resultTitle;
         }
 
-        public void pythonRead()
-        {
-            var engine = IronPython.Hosting.Python.CreateEngine();
-            var pythonScript = engine.CreateScriptSourceFromFile(pythonfilePath);
-
-            var argv = new List<string>();
-            argv.Add("");
-            argv.Add("Avatar");
-
-            //engine.Execute()
-
-
-            
-        }
-
-        public void pythonProcess()
+        public void callPython()
         {
             var psi = new ProcessStartInfo();
             psi.FileName = @"C:\Users\augus\AppData\Local\Programs\Python\Python37\python.exe";
+            
 
             var script = @"C:\Users\augus\source\repos\moviegest01\moviegest\index\index\Logic\Python\model.py";
             string mTitle = "Avatar";

@@ -12,6 +12,7 @@ using System.Data;
 using System.Drawing;
 using IronPython;
 using System.Diagnostics;
+using IronPython.Hosting;
 
 
 namespace index
@@ -63,14 +64,29 @@ namespace index
 
         public void callPython()
         {
-            var psi = new ProcessStartInfo();
-            psi.FileName = @"C:\Users\augus\AppData\Local\Programs\Python\Python37\python.exe";
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+
+            process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            process.StartInfo.FileName = @"C:\Users\augus\source\repos\moviegest01\moviegest\index\index\Logic\Python\__pycache__\model.cpython-37";
+            //process.StartInfo.Arguments = "/C python model.py";
+            process.Start();
+
+           
+
+        }
+
+        public void callPython2()
+        {
             
+            var engine = Python.CreateEngine();
+            dynamic py = engine.ExecuteFile(@"C:\Users\augus\source\repos\moviegest01\moviegest\index\index\Logic\Python\model.py");
+            //proc.StartInfo.FileName = @"C:\Users\augus\AppData\Local\Programs\Python\Python37\python.exe";
+            //proc.StartInfo.RedirectStandardOutput = true;
+            //proc.StartInfo.UseShellExecute = false;
+            //var progToRun = @"C:\Users\augus\source\repos\moviegest01\moviegest\index\index\Logic\Python\model.py";
+            //proc.StartInfo.Arguments = string.Format("{0}", progToRun);
+            //proc.Start();
 
-            var script = @"C:\Users\augus\source\repos\moviegest01\moviegest\index\index\Logic\Python\model.py";
-            string mTitle = "Avatar";
-
-            //psi.Arguments = $"\" {script}  \"\  \"\"  \"";
 
         }
 

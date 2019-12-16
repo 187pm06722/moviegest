@@ -38,6 +38,31 @@ namespace index.Forms
             this.btnAddToFavorite.Click += BtnAddToFavorite_Click;
             this.btnSearch.Click += btnSearch_Click;
             this.grdDB.DoubleClick += grdDB_DoubleClick;
+            this.grdDB.CellClick += grdDB_CellClick;
+            this.btnRec.Click += btnRec_Click;
+        }
+
+        void btnRec_Click(object sender, EventArgs e)
+        {
+
+            this.Business.callPython();
+            var recommendForm = new recommendedMoviesForm();
+            recommendForm.ShowDialog();
+            //throw new NotImplementedException();
+        }
+
+        void grdDB_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(grdDB.SelectedCells.Count > 0)
+            {
+                MovieTitle = grdDB.SelectedRows[0].Cells[13].Value + string.Empty;
+                this.txtTest.Text = MovieTitle;
+            }
+
+            System.IO.File.WriteAllText(@"C:\Users\augus\source\repos\moviegest01\moviegest\index\index\Logic\Python\argv.txt", MovieTitle);
+            
+            
+            //throw new NotImplementedException();
         }
 
         void grdDB_DoubleClick(object sender, EventArgs e)
@@ -102,6 +127,8 @@ namespace index.Forms
             MessageBox.Show("Cancel successfully.", "Cancel Form", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             this.Close();
         }
+
+        
 
         private void BtnAddToFavorite_Click(object sender, EventArgs e)
         {
@@ -198,6 +225,16 @@ namespace index.Forms
         {
             var btnAddNewMovie = new AddNewMoviesForm();
             btnAddNewMovie.ShowDialog();
+        }
+
+        private void getRecommendationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Business.callPython();
+            var btnGetRec = new recommendedMoviesForm();
+            btnGetRec.ShowDialog();
+
+            
+            
         }
 
     }

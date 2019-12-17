@@ -36,31 +36,28 @@ namespace index.Forms
             this.Business = new FavoriteMoviesManagement();
             this.MovieTitle = this.txtSearch.Text;
             this.Load +=BrowseMoviesForm_Load;
-            this.btnSave.Click += BtnSave_Click;
-            this.btnAddToFavorite.Click += btnAddToFavorite_Click;
             this.btnSearch.Click += btnSearch_Click;
             this.grdDB.DoubleClick += grdDB_DoubleClick;
             this.grdDB.CellClick += grdDB_CellClick;
-            this.btnRec.Click += btnRec_Click;
-            this.btnDeletefromDB.Click += btnDeletefromDB_Click;
+            this.btnCancel.Click += btnCancel_Click;
+            
         }
 
-        void btnDeletefromDB_Click(object sender, EventArgs e)
+        void btnCancel_Click(object sender, EventArgs e)
         {
-            if (grdDB.SelectedCells.Count > 0)
+            DialogResult Cancel;
+            try
             {
-                int ID = Int32.Parse(grdDB.SelectedRows[0].Cells[3].Value + string.Empty);
-                //favoriteCollection.Add(MovieTitle + "\n");
-                command = connection.CreateCommand();
-                command.CommandText = "DELETE * FROM movie_dataset_fixed where id like ('%" + ID + "%')";
-                adapter.SelectCommand = command;
-                //table.Clear();
-                adapter.Fill(table);
-                grdDB.DataSource = table;
+                Cancel = MessageBox.Show("Are you sure want to Cancel? Confirm if you want to Cancel", "Cancel Form", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (Cancel == DialogResult.Yes)
+                {
+                    this.Close();
+                }
             }
-            
-           
-            //throw new NotImplementedException();
+            catch(Exception ex)
+            {
+                throw new ApplicationException("System error! Please check it agian", ex);
+            }
         }
 
         void btnAddToFavorite_Click(object sender, EventArgs e)
@@ -77,8 +74,8 @@ namespace index.Forms
         {
 
             //this.Business.callPython();
-            var recommendForm = new recommendedMoviesForm();
-            recommendForm.ShowDialog();
+            //var recommendForm = new recommendedMoviesForm();
+            //recommendForm.ShowDialog();
             //throw new NotImplementedException();
         }
 
@@ -132,6 +129,7 @@ namespace index.Forms
                 command = connection.CreateCommand();
                 command.CommandText = "SELECT * FROM movie_dataset_fixed where title like ('%" + this.txtSearch.Text + "%')";
                 adapter.SelectCommand = command;
+                //command.ExecuteNonQuery();
                 //table.Clear();
                 adapter.Fill(table);
                 grdDB.DataSource = table;
@@ -152,14 +150,7 @@ namespace index.Forms
             //throw new NotImplementedException();
         }
 
-        private void BtnCancel_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Cancel successfully.", "Cancel Form", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            this.Close();
-        }
-
-        
-
+       
         private void BtnAddToFavorite_Click(object sender, EventArgs e)
         {
             //throw new NotImplementedException();
@@ -250,22 +241,5 @@ namespace index.Forms
                 grdDB.Rows.RemoveAt(item.Index);
             }
         }
-
-        private void addNewMovieToolStripMenuItem_Click(object sender, System.EventArgs e)
-        {
-            var btnAddNewMovie = new AddNewMoviesForm();
-            btnAddNewMovie.ShowDialog();
-        }
-
-        private void getRecommendationToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Business.callPython();
-            var btnGetRec = new recommendedMoviesForm();
-            btnGetRec.ShowDialog();
-
-            
-            
-        }
-
     }
 }

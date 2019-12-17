@@ -37,8 +37,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.rtxtRecommend2 = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.favoriteBox = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoBox01)).BeginInit();
             this.panel3.SuspendLayout();
@@ -54,7 +52,7 @@
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(197, 749);
+            this.panel1.Size = new System.Drawing.Size(197, 573);
             this.panel1.TabIndex = 0;
             // 
             // btnExit
@@ -106,7 +104,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(197, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2, 749);
+            this.panel2.Size = new System.Drawing.Size(2, 573);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -114,12 +112,10 @@
             this.panel3.BackColor = System.Drawing.Color.Silver;
             this.panel3.Controls.Add(this.rtxtRecommend2);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.favoriteBox);
-            this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(199, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1171, 749);
+            this.panel3.Size = new System.Drawing.Size(926, 573);
             this.panel3.TabIndex = 2;
             // 
             // rtxtRecommend2
@@ -127,9 +123,9 @@
             this.rtxtRecommend2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.rtxtRecommend2.Font = new System.Drawing.Font("Corbel", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtRecommend2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.rtxtRecommend2.Location = new System.Drawing.Point(44, 515);
+            this.rtxtRecommend2.Location = new System.Drawing.Point(30, 118);
             this.rtxtRecommend2.Name = "rtxtRecommend2";
-            this.rtxtRecommend2.Size = new System.Drawing.Size(1080, 222);
+            this.rtxtRecommend2.Size = new System.Drawing.Size(867, 269);
             this.rtxtRecommend2.TabIndex = 4;
             this.rtxtRecommend2.Text = "";
             // 
@@ -138,39 +134,17 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(17, 478);
+            this.label2.Location = new System.Drawing.Point(25, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(520, 26);
             this.label2.TabIndex = 3;
             this.label2.Text = "Based on your lastest search, you might want to watch..";
             // 
-            // favoriteBox
-            // 
-            this.favoriteBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.favoriteBox.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.favoriteBox.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.favoriteBox.Location = new System.Drawing.Point(44, 141);
-            this.favoriteBox.Name = "favoriteBox";
-            this.favoriteBox.Size = new System.Drawing.Size(1080, 327);
-            this.favoriteBox.TabIndex = 2;
-            this.favoriteBox.Text = "";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(15, 103);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 26);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Your favorite";
-            // 
             // MoviegestHomePageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1125, 573);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -194,9 +168,7 @@
         private System.Windows.Forms.PictureBox logoBox01;
         private System.Windows.Forms.LinkLabel btnBrowseForMovies;
         private System.Windows.Forms.LinkLabel btnExit;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox favoriteBox;
         private System.Windows.Forms.RichTextBox rtxtRecommend2;
     }
 }

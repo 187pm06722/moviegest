@@ -20,6 +20,7 @@ namespace index.Forms
     {
         private FavoriteMoviesManagement Business;
         private string MovieTitle;
+        public int movieID;
         //private bool isEmpty = true;
         //SqlConnection connection = new;
 
@@ -45,7 +46,7 @@ namespace index.Forms
         void btnRec_Click(object sender, EventArgs e)
         {
 
-            this.Business.callPython();
+            //this.Business.callPython();
             var recommendForm = new recommendedMoviesForm();
             recommendForm.ShowDialog();
             //throw new NotImplementedException();
@@ -70,8 +71,7 @@ namespace index.Forms
             if (this.grdDB.SelectedRows.Count == 1)
             {
                 int a = 0;
-                var movieZ = (ViewMovie)this.grdDB.SelectedRows[0].DataBoundItem;
-                a = movieZ.Id; 
+                
                 var updateform = new UpdateMovieForm(a);
                 updateform.ShowDialog();
                 this.ViewAnyMovies();

@@ -26,7 +26,8 @@ namespace index.Forms
 
         void UpdateMovieForm_Load(object sender, EventArgs e)
         {
-            
+            this.txtId.Text = movieId.ToString();
+           //b this.txtBudget = 
             
             //throw new NotImplementedException();
         }

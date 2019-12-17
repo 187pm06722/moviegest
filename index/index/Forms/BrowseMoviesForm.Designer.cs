@@ -36,7 +36,6 @@
             this.clearResultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSave = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteARecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addNewMovieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTest = new System.Windows.Forms.TextBox();
             this.btnRec = new System.Windows.Forms.Button();
@@ -82,8 +81,7 @@
             this.btnAddToFavorite,
             this.clearResultsToolStripMenuItem,
             this.btnSave,
-            this.deleteARecordToolStripMenuItem,
-            this.addNewMovieToolStripMenuItem});
+            this.deleteARecordToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1215, 24);
@@ -116,13 +114,6 @@
             this.deleteARecordToolStripMenuItem.Size = new System.Drawing.Size(162, 20);
             this.deleteARecordToolStripMenuItem.Text = "Delete A Record From View";
             this.deleteARecordToolStripMenuItem.Click += new System.EventHandler(this.deleteARecordToolStripMenuItem_Click);
-            // 
-            // addNewMovieToolStripMenuItem
-            // 
-            this.addNewMovieToolStripMenuItem.Name = "addNewMovieToolStripMenuItem";
-            this.addNewMovieToolStripMenuItem.Size = new System.Drawing.Size(137, 20);
-            this.addNewMovieToolStripMenuItem.Text = "Add New Movie To DB";
-            this.addNewMovieToolStripMenuItem.Click += new System.EventHandler(this.addNewMovieToolStripMenuItem_Click);
             // 
             // label2
             // 
@@ -189,7 +180,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem clearResultsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteARecordToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addNewMovieToolStripMenuItem;
         private System.Windows.Forms.TextBox txtTest;
         private System.Windows.Forms.Button btnRec;
     }

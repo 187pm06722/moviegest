@@ -67,8 +67,8 @@ namespace index
             System.Diagnostics.Process process = new System.Diagnostics.Process();
 
             process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            process.StartInfo.FileName = @"C:\Users\augus\source\repos\moviegest01\moviegest\index\index\Logic\Python\__pycache__\model.cpython-37";
-            //process.StartInfo.Arguments = "/C python model.py";
+            //process.StartInfo.FileName = @"C:\Users\augus\source\repos\moviegest01\moviegest\index\index\Logic\Python\__pycache__\model.cpython-37";
+            process.StartInfo.Arguments = "/C python model.py";
             process.Start();
 
            

@@ -82,7 +82,7 @@ def getMoviesToTxtFile(sortedSimilarMovieList):
     	j = j + 1
     	if j > 8:
     		break
-
+    
     #pickle.dump()
     with open('recommendedList3.txt', 'w+') as outputFile:
     	for row in data_list:
@@ -100,12 +100,15 @@ def getThingsTogether(enteredMovie):
     getMoviesToTxtFile(sortedList)
 
 def main():
-    file = open("argv.txt","r")
-    unfixed_str = file.read()
-    cappedStr = unfixed_str.title()
-    #print(cappedStr)
-    #enteredMovie = 'Death Race'
-    getThingsTogether(cappedStr)
+    while True:
+        file = open("argv.txt","r")
+        unfixed_str = file.read()
+        cappedStr = unfixed_str.title()
+        print(cappedStr)
+        #print(cappedStr)
+        #enteredMovie = 'Death Race'
+        getThingsTogether(cappedStr)
+        break
     #getThingsTogether('Inception')
     
     #enteredMovie = sys.argv[1]

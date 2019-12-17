@@ -13,7 +13,7 @@ using System.IO;
 namespace index
 {
     
-    public partial class MoviegestHomePageForm : Form
+    public partial class MoviegestHomePageForm : Form 
     {
         private FavoriteMoviesManagement Business;
         public MoviegestHomePageForm()
@@ -57,10 +57,7 @@ namespace index
 
             try
             {
-                StreamReader stringx = new StreamReader(@"C:\Users\augus\source\repos\moviegest01\moviegest\index\index\Logic\Python\recommendedList2.txt");
-                string data = stringx.ReadToEnd();
-                this.rtxtRecommend2.Text = data;
-                
+                this.loadJson();                
             }
             catch(Exception ez)
             {
@@ -68,6 +65,21 @@ namespace index
             }
             
             //this.reportViewer1.RefreshReport();
+        }
+
+        public void loadJson()
+        {
+            try
+            {
+                StreamReader stringx = new StreamReader(@"C:\Users\augus\source\repos\moviegest01\moviegest\index\index\Logic\Python\recommendedList3.txt");
+                string data = stringx.ReadToEnd();
+                this.rtxtRecommend2.Text = data;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message.ToString());
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

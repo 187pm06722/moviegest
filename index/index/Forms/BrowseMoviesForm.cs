@@ -29,6 +29,7 @@ namespace index.Forms
         //string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\augus\OneDrive\Documents\moviegestDB.mdf;Integrated Security=True;Connect Timeout=30";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
+        public List<string> favoriteCollection = new List<string>();
         public BrowseMoviesForm()
         {
             InitializeComponent();
@@ -36,11 +37,40 @@ namespace index.Forms
             this.MovieTitle = this.txtSearch.Text;
             this.Load +=BrowseMoviesForm_Load;
             this.btnSave.Click += BtnSave_Click;
-            this.btnAddToFavorite.Click += BtnAddToFavorite_Click;
+            this.btnAddToFavorite.Click += btnAddToFavorite_Click;
             this.btnSearch.Click += btnSearch_Click;
             this.grdDB.DoubleClick += grdDB_DoubleClick;
             this.grdDB.CellClick += grdDB_CellClick;
             this.btnRec.Click += btnRec_Click;
+            this.btnDeletefromDB.Click += btnDeletefromDB_Click;
+        }
+
+        void btnDeletefromDB_Click(object sender, EventArgs e)
+        {
+            if (grdDB.SelectedCells.Count > 0)
+            {
+                int ID = Int32.Parse(grdDB.SelectedRows[0].Cells[3].Value + string.Empty);
+                //favoriteCollection.Add(MovieTitle + "\n");
+                command = connection.CreateCommand();
+                command.CommandText = "DELETE * FROM movie_dataset_fixed where id like ('%" + ID + "%')";
+                adapter.SelectCommand = command;
+                //table.Clear();
+                adapter.Fill(table);
+                grdDB.DataSource = table;
+            }
+            
+           
+            //throw new NotImplementedException();
+        }
+
+        void btnAddToFavorite_Click(object sender, EventArgs e)
+        {
+            if (grdDB.SelectedCells.Count > 0)
+            {
+                MovieTitle = grdDB.SelectedRows[0].Cells[13].Value + string.Empty;
+                favoriteCollection.Add(MovieTitle + "\n");
+            }
+            //throw new NotImplementedException();
         }
 
         void btnRec_Click(object sender, EventArgs e)
@@ -71,7 +101,7 @@ namespace index.Forms
             if (this.grdDB.SelectedRows.Count == 1)
             {
                 int a = 0;
-                
+                a = Int32.Parse(this.grdDB.SelectedRows[0].Cells[3].Value + string.Empty);
                 var updateform = new UpdateMovieForm(a);
                 updateform.ShowDialog();
                 this.ViewAnyMovies();

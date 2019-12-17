@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtTest = new System.Windows.Forms.TextBox();
             this.btnRec = new System.Windows.Forms.Button();
+            this.btnDeletefromDB = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.grdDB)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -81,7 +82,8 @@
             this.btnAddToFavorite,
             this.clearResultsToolStripMenuItem,
             this.btnSave,
-            this.deleteARecordToolStripMenuItem});
+            this.deleteARecordToolStripMenuItem,
+            this.btnDeletefromDB});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1215, 24);
@@ -142,6 +144,12 @@
             this.btnRec.Text = "Recommend!";
             this.btnRec.UseVisualStyleBackColor = true;
             // 
+            // btnDeletefromDB
+            // 
+            this.btnDeletefromDB.Name = "btnDeletefromDB";
+            this.btnDeletefromDB.Size = new System.Drawing.Size(101, 20);
+            this.btnDeletefromDB.Text = "Delete From DB";
+            // 
             // BrowseMoviesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,5 +190,6 @@
         private System.Windows.Forms.ToolStripMenuItem deleteARecordToolStripMenuItem;
         private System.Windows.Forms.TextBox txtTest;
         private System.Windows.Forms.Button btnRec;
+        private System.Windows.Forms.ToolStripMenuItem btnDeletefromDB;
     }
 }

@@ -18,7 +18,7 @@ using IronPython.Hosting;
 namespace index
 {
     
-    class FavoriteMoviesManagement
+    public class FavoriteMoviesManagement
     {
         SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString);
         SqlCommand command;
@@ -26,24 +26,6 @@ namespace index
         string pythonfilePath = @"C:\Users\augus\PycharmProjects\RecommendationSystem\model.py";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
-        public movie_dataset_fixed[] GetFavoriteMovies()
-        {
-
-
-            return null;
-        }
-
-      
-
-        public void AddMovies()
-        {
-            //
-        }
-
-        public void EditMovie()
-        {
-            //
-        }
 
         public void DeleteMovie()
         {
@@ -55,12 +37,6 @@ namespace index
 
         }
 
-        public string getTitleFromIndex()
-        {
-            string resultTitle = "";
-
-            return resultTitle;
-        }
 
         public void callPython()
         {

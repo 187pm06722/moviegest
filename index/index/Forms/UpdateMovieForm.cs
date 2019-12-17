@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace index.Forms
 {
@@ -14,6 +17,11 @@ namespace index.Forms
     {
         private int movieId;
         private FavoriteMoviesManagement Business;
+        SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString);
+        SqlCommand command;
+        //string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\augus\OneDrive\Documents\moviegestDB.mdf;Integrated Security=True;Connect Timeout=30";
+        SqlDataAdapter adapter = new SqlDataAdapter();
+        DataTable table = new DataTable();
         public UpdateMovieForm(int id)
         {
             InitializeComponent();
@@ -26,7 +34,24 @@ namespace index.Forms
 
         void UpdateMovieForm_Load(object sender, EventArgs e)
         {
-            this.txtId.Text = movieId.ToString();
+            //this.txtId.Text = movieId.ToString();
+            //this.txtBudget.Text = this.Business.movie;
+            var db = new moviegestDBEntities1();
+
+            //this.grdDB.DataSource = db.movie_dataset_fixed.SqlQuery("Select * from movie_dataset_fixed where title like (" + this.txtSearch.Text + ")");
+            //this.grdDB.DataSource = db.movie_dataset_fixed.Where(p => p.title.Equals(this.txtSearch.Text)).ToList();
+            //string sqlSELECT = "SELECT * FROM movie_dataset_fixed where title like ("+this.txtSearch.Text+")";
+            if (this.txtId.Text.Equals(""))
+            {
+                return;
+            }
+            else
+            {
+                command = connection.CreateCommand();
+                command.CommandText = "UPDATE movie_dataset_fixed SET  where id like ('%" + this.txtId.Text + "%')";
+                adapter.SelectCommand = command;
+                
+            }
            //b this.txtBudget = 
             
             //throw new NotImplementedException();
